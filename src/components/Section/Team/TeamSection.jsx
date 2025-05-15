@@ -53,7 +53,7 @@ const TeamSection = () => {
         <div className="section bg-light1 tekup-section-padding">
             <div className="container">
                 <div className="tekup-section-title center large-width">
-                    <h2>Meet the team behind techverse</h2>
+                    <h2>Meet the Spacintech team</h2>
                 </div>
             </div>
             <Slider {...settings}>

@@ -13,10 +13,12 @@ import ChooseSection from '~/components/Section/ChooseSection';
 import Header from '~/components/Section/Header/Header';
 import HeroSection from "~/components/Section/HeroSection";
 import LetsBuildSection from '~/components/Section/LetsBuild';
+import PricingSection from '~/components/Section/Pricing';
 import RecentProjectsSection from '~/components/Section/RecentProjects';
 import ServiceSection from "~/components/Section/ServiceSection";
 import SuccessRatesSection from '~/components/Section/SuccessRates/SuccessRateSection';
 import TeamSection from '~/components/Section/Team';
+import TestimonialSection from '~/components/Section/Testimonial';
 
 
 export default function Home() {
@@ -28,8 +30,10 @@ export default function Home() {
       <SuccessRatesSection />
       <RecentProjectsSection />
       <ChooseSection />
+      <PricingSection />
       <TeamSection />
       <LetsBuildSection />
+      <TestimonialSection />
       {/* <ServiceSlideSection/>
       <ItSolutionSection />
       <RecentProjectsSection />
