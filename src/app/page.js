@@ -16,6 +16,7 @@ import LetsBuildSection from '~/components/Section/LetsBuild';
 import RecentProjectsSection from '~/components/Section/RecentProjects';
 import ServiceSection from "~/components/Section/ServiceSection";
 import SuccessRatesSection from '~/components/Section/SuccessRates/SuccessRateSection';
+import TeamSection from '~/components/Section/Team';
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       <SuccessRatesSection />
       <RecentProjectsSection />
       <ChooseSection />
+      <TeamSection />
       <LetsBuildSection />
       {/* <ServiceSlideSection/>
       <ItSolutionSection />
