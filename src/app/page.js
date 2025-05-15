@@ -9,12 +9,14 @@
 
 import Header from '~/components/Section/Header/Header';
 import HeroSection from "~/components/Section/HeroSection";
+import ServiceSection from "~/components/Section/Home-8/ServiceSection";
 
 export default function Home() {
   return (
     <div>
       <Header />
       <HeroSection />
+      <ServiceSection />
       {/* <ServiceSlideSection/>
       <ItSolutionSection />
       <RecentProjectsSection />
