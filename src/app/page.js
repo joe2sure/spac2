@@ -7,13 +7,16 @@
 // import CtaTwoSection from "~/components/Section/Common/CtaTwo/CtaTwoSection";
 // import FooterOneSection from "~/components/Section/Common/FooterOne/FooterOneSection";
 // import RecentProjectsSection from '~/components/Section/RecentProjectsSection';
+// import LetsBuildSection from "~/components/Section/Home-10/LetsBuildSection";
 
 import ChooseSection from '~/components/Section/ChooseSection';
 import Header from '~/components/Section/Header/Header';
 import HeroSection from "~/components/Section/HeroSection";
+import LetsBuildSection from '~/components/Section/LetsBuild';
 import RecentProjectsSection from '~/components/Section/RecentProjects';
 import ServiceSection from "~/components/Section/ServiceSection";
 import SuccessRatesSection from '~/components/Section/SuccessRates/SuccessRateSection';
+
 
 export default function Home() {
   return (
@@ -24,6 +27,7 @@ export default function Home() {
       <SuccessRatesSection />
       <RecentProjectsSection />
       <ChooseSection />
+      <LetsBuildSection />
       {/* <ServiceSlideSection/>
       <ItSolutionSection />
       <RecentProjectsSection />
