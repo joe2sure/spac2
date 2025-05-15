@@ -8,6 +8,7 @@
 // import FooterOneSection from "~/components/Section/Common/FooterOne/FooterOneSection";
 // import RecentProjectsSection from '~/components/Section/RecentProjectsSection';
 
+import ChooseSection from '~/components/Section/ChooseSection';
 import Header from '~/components/Section/Header/Header';
 import HeroSection from "~/components/Section/HeroSection";
 import RecentProjectsSection from '~/components/Section/RecentProjects';
@@ -22,6 +23,7 @@ export default function Home() {
       <ServiceSection />
       <SuccessRatesSection />
       <RecentProjectsSection />
+      <ChooseSection />
       {/* <ServiceSlideSection/>
       <ItSolutionSection />
       <RecentProjectsSection />
