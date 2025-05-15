@@ -1,5 +1,3 @@
-import HeroSection from "~/components/Section/Home-1/HeroSection";
-import Header from '~/components/Section/Common/Header/Header';
 // import ItSolutionSection from "~/components/Section/Home-1/ItSolutionSection";
 // import RecentBlogSection from "~/components/Section/Home-1/RecentBlogSection";
 // import RecentProjectsSection from "~/components/Section/Home-1/RecentProjectsSection";
@@ -9,6 +7,8 @@ import Header from '~/components/Section/Common/Header/Header';
 // import CtaTwoSection from "~/components/Section/Common/CtaTwo/CtaTwoSection";
 // import FooterOneSection from "~/components/Section/Common/FooterOne/FooterOneSection";
 
+import Header from '~/components/Section/Header/Header';
+import HeroSection from "~/components/Section/HeroSection";
 
 export default function Home() {
   return (

@@ -1,12 +1,14 @@
 import Link from "next/link";
-import HeaderTwo from "~/components/Section/Common/Header/HeaderTwo";
-import FooterFour from '~/components/Section/Common/FooterFour';
+import Footer from "~/components/Section/Footer/Footer";
+import Header from "~/components/Section/Header";
+// import HeaderTwo from "~/components/Section/Common/Header/HeaderTwo";
+// import FooterFour from '~/components/Section/Common/FooterFour';
 
 
 const NotFound = () => {
     return (
     <>
-      <HeaderTwo className="tekup-header-top bg-light1 "/>
+      <Header className="tekup-header-top bg-light1 "/>
         <div className="tekup-errors-section">
         <div className="container">
           <div className="tekup-errors-content">
@@ -19,7 +21,7 @@ const NotFound = () => {
           </div>
         </div>
       </div>
-      <FooterFour/>
+      <Footer/>
     </>
     );
 };
