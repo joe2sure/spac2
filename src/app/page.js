@@ -1,14 +1,3 @@
-// import ItSolutionSection from "~/components/Section/Home-1/ItSolutionSection";
-// import RecentBlogSection from "~/components/Section/Home-1/RecentBlogSection";
-// import RecentProjectsSection from "~/components/Section/Home-1/RecentProjectsSection";
-// import TeamSection from "~/components/Section/Home-1/TeamSection";
-// import ServiceSlideSection from "~/components/Section/Home-1/ServiceSlideSection";
-// import WorkProcessSection from "~/components/Section/Common/WorkProcess/WorkProcessSection";
-// import CtaTwoSection from "~/components/Section/Common/CtaTwo/CtaTwoSection";
-// import FooterOneSection from "~/components/Section/Common/FooterOne/FooterOneSection";
-// import RecentProjectsSection from '~/components/Section/RecentProjectsSection';
-// import LetsBuildSection from "~/components/Section/Home-10/LetsBuildSection";
-
 import ChooseSection from '~/components/Section/ChooseSection';
 import Footer from '~/components/Section/Footer/Footer';
 import Header from '~/components/Section/Header/Header';

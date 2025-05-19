@@ -135,13 +135,13 @@ const Header = () => {
             <div className="tekup-header-info-wrap">
               <div className="tekup-header-info">
                 <ul>
-                  <li><i className="ri-map-pin-2-fill"></i>2774 Oak Drive, Plattsburgh, New York</li>
-                  <li><Link href="tel:123"><i className="ri-phone-fill"></i>518-564-3200</Link></li>
+                  <li><i className="ri-map-pin-2-fill"></i>14 Waterloo Rd WV1 4BS, Wolverhampton</li>
+                  <li><Link href="tel:123"><i className="ri-phone-fill"></i>07482187549</Link></li>
                 </ul>
               </div>
               <div className="tekup-header-info">
                 <ul>
-                  <li><i className="ri-time-fill"></i>Office Hours: 8:00 AM – 10:00 PM</li>
+                  <li><i className="ri-time-fill"></i>Office Hours: 8:00 AM – 4:00 PM</li>
                 </ul>
               </div>
             </div>
@@ -178,7 +178,7 @@ const Header = () => {
                 </div>
                 <ul className="site-menu-main" onClick={menuMainClickHandler}>
                   <li className="nav-item nav-item-has-children">
-                    <Link href="#" className="nav-link-item drop-trigger">Demo <i className="ri-arrow-down-s-line"></i></Link>
+                    <Link href="#" className="nav-link-item drop-trigger">Home <i className="ri-arrow-down-s-line"></i></Link>
                     <ul className="sub-menu" id="submenu-1">
                       <li className="sub-menu--item">
                         <Link href="/">
@@ -403,7 +403,7 @@ const Header = () => {
               </div>
             </div>
             {/* <!-- mobile menu trigger --> */}
-            <div className="mobile-menu-trigger light" onClick={menuTriggerClickHandler}>
+            <div className="mobil\e-menu-trigger light" onClick={menuTriggerClickHandler}>
               <span></span>
             </div>
             {/* <!--/.Mobile Menu Hamburger Ends--> */}
