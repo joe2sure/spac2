@@ -320,8 +320,8 @@ const HeroSection = () => {
           <div className="tekup-counter-wrap">
             <div className="tekup-counter-data light-color">
               <h2>
-                <span data-percentage="26" className="tekup-counter">
-                  {isVisible && <CountUp end={26} duration={3} />}
+                <span data-percentage="10" className="tekup-counter">
+                  {isVisible && <CountUp end={10} duration={3} />}
                 </span>
                 +
               </h2>
@@ -330,8 +330,8 @@ const HeroSection = () => {
             </div>
             <div className="tekup-counter-data light-color">
               <h2>
-                <span data-percentage="730" className="tekup-counter">
-                  {isVisible && <CountUp end={730} duration={3} />}
+                <span data-percentage="100" className="tekup-counter">
+                  {isVisible && <CountUp end={100} duration={3} />}
                 </span>
                 +
               </h2>
@@ -340,8 +340,8 @@ const HeroSection = () => {
             </div>
             <div className="tekup-counter-data light-color">
               <h2>
-                <span data-percentage="198" className="tekup-counter">
-                  {isVisible && <CountUp end={198} duration={3} />}
+                <span data-percentage="90" className="tekup-counter">
+                  {isVisible && <CountUp end={90} duration={3} />}
                 </span>
                 +
               </h2>
