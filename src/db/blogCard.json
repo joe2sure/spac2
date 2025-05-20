@@ -1,23 +1,74 @@
 [
     {
         "image": "/images/blog/blog1.png",
-        "title": "Technology support allows erie non-profit to serve",
-        "category": "Technology",
-        "date": "26 June 2023",
-        "link": "single-blog"
+        "title": "Securing Enterprise Data: Advanced Database Administration Techniques",
+        "category": "Database Administration",
+        "date": "15 May 2025",
+        "link": "single-blog",
+        "excerpt": "Discover how our database administration team implemented high-availability solutions that reduced downtime by 99.9% for mission-critical systems."
     },
     {
         "image": "/images/blog/blog12.png",
-        "title": "The act of knowledge & the act of design thinking",
-        "category": "Branding",
-        "date": "12 August 2023",
-        "link": "single-blog"
+        "title": "Cloud Migration Success: Azure System Administration Best Practices",
+        "category": "Azure",
+        "date": "7 May 2025",
+        "link": "single-blog",
+        "excerpt": "Learn the step-by-step approach our Azure specialists used to migrate a complex legacy infrastructure to the cloud while maintaining continuous operations."
     },
     {
         "image": "/images/blog/blog3.png",
-        "title": "Core on web vitals, a smas magazine case study",
-        "category": "Design",
-        "date": "9 March 2023",
-        "link": "single-blog"
+        "title": "How Machine Learning is Revolutionizing Predictive Maintenance",
+        "category": "Machine Learning",
+        "date": "29 April 2025",
+        "link": "single-blog",
+        "excerpt": "Case study: How our ML engineers built a predictive maintenance system that reduced equipment failures by 78% for a manufacturing client."
+    },
+    {
+        "image": "/images/blog/blog4.png",
+        "title": "Data Analysis Techniques That Transformed Customer Retention",
+        "category": "Data Analysis",
+        "date": "22 April 2025",
+        "link": "single-blog",
+        "excerpt": "Explore the advanced analytics methods our data scientists implemented to help an e-commerce platform increase customer retention by 45%."
+    },
+    {
+        "image": "/images/blog/blog5.png",
+        "title": "Project Management Excellence: Delivering Complex IT Solutions On Time",
+        "category": "Project Management",
+        "date": "18 April 2025",
+        "link": "single-blog",
+        "excerpt": "Our project management methodology explained: How we consistently deliver enterprise-scale IT projects on time and within budget."
+    },
+    {
+        "image": "/images/blog/blog6.png",
+        "title": "AI-Powered Customer Service: Building Intelligent Chatbots",
+        "category": "AI Solutions",
+        "date": "10 April 2025",
+        "link": "single-blog",
+        "excerpt": "Inside look at how we developed an AI customer service solution that handles 85% of inquiries without human intervention while maintaining satisfaction scores."
+    },
+    {
+        "image": "/images/blog/blog7.png",
+        "title": "Cybersecurity Essentials: Protecting Your Organization from Modern Threats",
+        "category": "Cybersecurity",
+        "date": "3 April 2025",
+        "link": "single-blog",
+        "excerpt": "Our cybersecurity experts share the critical steps every organization should take to safeguard their digital assets from increasingly sophisticated attacks."
+    },
+    {
+        "image": "/images/blog/blog8.png",
+        "title": "Implementing DevOps Practices for Faster Software Delivery",
+        "category": "DevOps",
+        "date": "28 March 2025",
+        "link": "single-blog",
+        "excerpt": "How our DevOps transformation services helped a financial services client reduce deployment time from weeks to hours while improving code quality."
+    },
+    {
+        "image": "/images/blog/blog9.png",
+        "title": "Deep Learning Applications in Computer Vision for Quality Control",
+        "category": "AI Research",
+        "date": "21 March 2025",
+        "link": "single-blog",
+        "excerpt": "Our AI research team demonstrates how custom computer vision models can detect manufacturing defects with 99.7% accuracy, even in challenging environments."
     }
 ]

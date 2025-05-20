@@ -222,7 +222,7 @@ const TestimonialSection = () => {
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
-            Trusted by many client's around the world
+            Trusted by more than 200+ clients around the world
           </motion.h2> 
         </motion.div> 
         
@@ -237,22 +237,67 @@ const TestimonialSection = () => {
           }}
         >
           <Slider {...settings} className="tekup-testimonial-slider"> 
-            {/* Testimonial 1 */}
+            {/* Database Administration Testimonial */}
             <AnimatedTestimonial 
               stars={5}
-              text=" If you're looking for a rewarding career and a chance to make an impact, you've come to the right place We will transform your business through our techniques! "
+              text="Their database administration services completely transformed our data infrastructure. The team optimized our SQL Server performance and implemented advanced security protocols that reduced our query times by 60%. Their expertise in handling large datasets has been invaluable for our growing operations."
               authorImg="/images/team/team1.png"
-              authorName="Alexander Cameron"
-              authorTitle="Lead Developer"
+              authorName="Sarah Mitchell"
+              authorTitle="CTO, FinTech Solutions"
             />
             
-            {/* Testimonial 2 */}
+            {/* Azure System Administration Testimonial */}
             <AnimatedTestimonial 
               stars={5}
-              text=" If you're looking for a rewarding career and a chance to make an impact, you've come to the right place We will transform your business through our techniques! "
+              text="The Azure system administration training provided by this team was exceptional. Their experts guided us through complex cloud migrations and taught our staff how to optimize cloud resources. We've reduced our infrastructure costs by 40% while improving system reliability. Truly transformational service!"
               authorImg="/images/team/team1.png"
-              authorName="Alexander Cameron"
-              authorTitle="Lead Developer"
+              authorName="Michael Reynolds"
+              authorTitle="IT Director, Global Retail Corp"
+            />
+
+            {/* Machine Learning Engineering Testimonial */}
+            <AnimatedTestimonial 
+              stars={5}
+              text="Working with their machine learning engineers was a game-changer for our predictive analytics capabilities. They built custom ML models that increased our forecast accuracy by 78%. Their team's ability to translate complex algorithms into business solutions has given us a competitive edge we didn't have before."
+              authorImg="/images/team/team1.png"
+              authorName="Jennifer Wong"
+              authorTitle="Head of Analytics, TechInnovate"
+            />
+
+            {/* Data Analysis Testimonial */}
+            <AnimatedTestimonial 
+              stars={5}
+              text="Their data analysis expertise helped us uncover insights we never knew existed in our customer data. The team delivered comprehensive dashboards and reports that drive our strategic decisions now. The ROI on their services has been tremendous, with data-driven initiatives increasing our revenue by 25%."
+              authorImg="/images/team/team1.png"
+              authorName="David Adebayo"
+              authorTitle="Marketing Director, Consumer Brands Inc."
+            />
+
+            {/* Project Management Testimonial */}
+            <AnimatedTestimonial 
+              stars={5}
+              text="We engaged their project management team for our digital transformation initiative, and the results exceeded all expectations. Their structured approach, clear communication, and ability to handle complex stakeholder requirements ensured our project was delivered on time and under budget. Remarkable professionalism!"
+              authorImg="/images/team/team1.png"
+              authorName="Lisa Chandler"
+              authorTitle="COO, Healthcare Solutions"
+            />
+
+            {/* AI Integrated Solutions Testimonial */}
+            <AnimatedTestimonial 
+              stars={5}
+              text="The AI integrated solution they developed for our customer service department reduced response times by 85% while maintaining high satisfaction rates. Their team's understanding of both AI capabilities and business needs resulted in an implementation that truly added value rather than just technological novelty."
+              authorImg="/images/team/team1.png"
+              authorName="Alex Rodriguez"
+              authorTitle="Customer Experience Officer, E-commerce Platform"
+            />
+
+            {/* Cybersecurity Testimonial */}
+            <AnimatedTestimonial 
+              stars={5}
+              text="After experiencing a security breach, we hired their cybersecurity team to overhaul our systems. They implemented comprehensive threat detection, conducted thorough penetration testing, and trained our staff on security best practices. We now have confidence in our security posture and passed our compliance audit with flying colors."
+              authorImg="/images/team/team1.png"
+              authorName="Robert Chen"
+              authorTitle="Security Director, Financial Services"
             />
           </Slider> 
         </motion.div>
