@@ -9,14 +9,15 @@ import Journey from "~/components/Section/AboutUs/Journey"
 import JoinTeam from "~/components/Section/AboutUs/JoinTeam"
 import CallToAction from "~/components/Section/AboutUs/CallToAction"
 import PageHeader from "~/components/Section/PageHeader/PageHeader"
+import MissionVision from "~/components/Section/AboutUs/MissionVision"
 
 const AboutPage = () => {
   return (
     <div>
       <Header />
       <PageHeader title="About Us" /> 
-      {/* <AboutHero /> */}
       <TrustedBy />
+      <MissionVision />
       <AboutMission />
       <DataSolutions />
       <OurLeaders />

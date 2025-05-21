@@ -63,9 +63,9 @@ export default function AboutMission() {
   }, [])
 
   const stats = [
-    { number: "11,000+", label: "Projects" },
-    { number: "46", label: "Team Members" },
-    { number: "150+", label: "Happy Clients" },
+    { number: "200+", label: "Projects" },
+    { number: "30", label: "Team Members" },
+    { number: "190+", label: "Happy Clients" },
   ]
 
   return (
@@ -99,7 +99,7 @@ export default function AboutMission() {
           <div className="col-lg-6">
             <div className="tekup-about-thumb" ref={videoRef}>
               <div className="tekup-about-thumb-wrap">
-                <img src="/images/about/about-thumb.png" alt="About Thumb" />
+                <img src="/images/p1/p_1.png" alt="About Thumb" />
                 <div className="tekup-popup-video">
                   <Link href="#" className="popup-video">
                     <i className="ri-play-fill"></i>
