@@ -11,6 +11,7 @@ import CallToAction from "~/components/Section/AboutUs/CallToAction"
 import PageHeader from "~/components/Section/PageHeader/PageHeader"
 import MissionVision from "~/components/Section/AboutUs/MissionVision"
 import TeamSection from "~/components/Section/Team"
+import AboutRecentProjects from "~/components/Section/AboutUs/AboutRecentProject"
 
 const AboutPage = () => {
   return (
@@ -22,7 +23,8 @@ const AboutPage = () => {
       <AboutMission />
       <DataSolutions />
       <TeamSection />
-      <Journey />
+       <AboutRecentProjects />
+      {/* <Journey /> */}
       <JoinTeam />
       <CallToAction />
       <Footer />
