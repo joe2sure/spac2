@@ -1,3 +1,4 @@
+import OurLeaders from '~/components/Section/AboutUs/OurLeaders';
 import ChooseSection from '~/components/Section/ChooseSection';
 import Footer from '~/components/Section/Footer/Footer';
 import Header from '~/components/Section/Header/Header';
@@ -22,7 +23,7 @@ export default function Home() {
       <RecentProjectsSection />
       <ChooseSection />
       <PricingSection />
-      <TeamSection />
+       <OurLeaders />
       <LetsBuildSection />
       <TestimonialSection />
       <RecentBlogSection />

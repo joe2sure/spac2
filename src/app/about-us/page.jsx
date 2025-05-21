@@ -10,6 +10,7 @@ import JoinTeam from "~/components/Section/AboutUs/JoinTeam"
 import CallToAction from "~/components/Section/AboutUs/CallToAction"
 import PageHeader from "~/components/Section/PageHeader/PageHeader"
 import MissionVision from "~/components/Section/AboutUs/MissionVision"
+import TeamSection from "~/components/Section/Team"
 
 const AboutPage = () => {
   return (
@@ -20,7 +21,7 @@ const AboutPage = () => {
       <MissionVision />
       <AboutMission />
       <DataSolutions />
-      <OurLeaders />
+      <TeamSection />
       <Journey />
       <JoinTeam />
       <CallToAction />

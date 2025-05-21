@@ -2,7 +2,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Link from "next/link";
+// import Link from "next/link";
 import teams from '~/db/teamData.json'
 import TeamCard from "~/components/Ui/Cards/TeamCard";
 const TeamSection = () => {
@@ -53,7 +53,7 @@ const TeamSection = () => {
         <div className="section bg-light1 tekup-section-padding">
             <div className="container">
                 <div className="tekup-section-title center large-width">
-                    <h2>Meet the Spacintech team</h2>
+                    <h2>Meet the Spacinfotech team</h2>
                 </div>
             </div>
             <Slider {...settings}>
