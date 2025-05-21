@@ -1,9 +1,6 @@
 import Link from "next/link";
 import Footer from "~/components/Section/Footer/Footer";
 import Header from "~/components/Section/Header";
-// import HeaderTwo from "~/components/Section/Common/Header/HeaderTwo";
-// import FooterFour from '~/components/Section/Common/FooterFour';
-
 
 const NotFound = () => {
     return (

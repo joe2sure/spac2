@@ -27,14 +27,6 @@ export default function Home() {
       <TestimonialSection />
       <RecentBlogSection />
       <Footer />
-      {/* <ServiceSlideSection/>
-      <ItSolutionSection />
-      <RecentProjectsSection />
-      <WorkProcessSection/>
-      <TeamSection />
-      <RecentBlogSection />
-      <CtaTwoSection/>
-      <FooterOneSection className="tekup-footer-section dark-bg extra-minus-margin"/> */}
     </div>
   );
 }
