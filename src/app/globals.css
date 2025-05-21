@@ -24,3 +24,52 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Add these styles to your global CSS file or as a styled component */
+
+/* Adjust overlap amount for different screen sizes */
+@media (max-width: 992px) {
+  /* For tablets and smaller devices */
+  .cta-section-outer {
+    padding-bottom: 120px !important;
+    margin-bottom: -60px !important;
+  }
+  
+  .footer-section::before {
+    height: 60px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* For mobile devices */
+  .cta-section-outer {
+    padding-bottom: 100px !important;
+    margin-bottom: -40px !important;
+  }
+  
+  .footer-section::before {
+    height: 40px !important;
+  }
+}
+
+/* Ensure proper stacking context */
+.cta-section-outer {
+  isolation: isolate;
+}
+
+/* Add some padding to the top of the footer content to account for the overlap */
+.tekup-infobox-wrap {
+  padding-top: 100px;
+}
+
+@media (max-width: 992px) {
+  .tekup-infobox-wrap {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tekup-infobox-wrap {
+    padding-top: 60px;
+  }
+}
