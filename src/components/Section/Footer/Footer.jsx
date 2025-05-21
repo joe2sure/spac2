@@ -16,7 +16,7 @@ export default function Footer() {
                                         </div>
                                         <div className="tekup-infobox-data">
                                             <p>Call anytime</p>
-                                            <h5>518-564-3200</h5>
+                                            <h5>07482187549</h5>
                                         </div>
                                     </div>
                                 </Link>
@@ -29,7 +29,7 @@ export default function Footer() {
                                         </div>
                                         <div className="tekup-infobox-data">
                                             <p>Email address</p>
-                                            <h5>tachup@example.com</h5>
+                                            <h5>info@spacinfotech.co.uk</h5>
                                         </div>
                                     </div>
                                 </Link>
@@ -41,7 +41,7 @@ export default function Footer() {
                                     </div>
                                     <div className="tekup-infobox-data">
                                         <p>Office Hours</p>
-                                        <h5>8:00 AM – 10:00 PM</h5>
+                                        <h5>8:00 AM – 4:00 PM</h5>
                                     </div>
                                 </div>
                             </div>
@@ -106,11 +106,12 @@ export default function Footer() {
                                         <h5>Services</h5>
                                     </div>
                                     <ul>
-                                        <li><Link href="#">UI/UX Design</Link></li>
-                                        <li><Link href="#">App Development</Link></li>
-                                        <li><Link href="#">Digital Marketing</Link></li>
-                                        <li><Link href="#">Web Development</Link></li>
+                                        <li><Link href="#">Database Administration</Link></li>
+                                        <li><Link href="#">Azure System Administration</Link></li>
+                                        <li><Link href="#">Machine Learning Engineering</Link></li>
+                                        <li><Link href="#">Data Analysis</Link></li>
                                         <li><Link href="#">Cyber Security</Link></li>
+                                        <li><Link href="#">AI Integrated Solutions</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -131,7 +132,7 @@ export default function Footer() {
                     </div>
                     <div className="tekup-footer-bottom center">
                         <div className="tekup-copywright light-color right">
-                            <p> © 2024 MthemeUs. All rights reserved.</p>
+                            <p> © 2024 Spacinfotech. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
