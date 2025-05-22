@@ -40,7 +40,7 @@ const SectionTitle = styled.h2`
     left: 0;
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #0891b2, #06b6d4);
+    background: linear-gradient(90deg, #dc2626, #ef4444);
   }
 `
 
@@ -76,7 +76,7 @@ const ServiceIcon = styled.div`
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: #ecfeff;
+  background: #fef2f2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +84,7 @@ const ServiceIcon = styled.div`
   
   i {
     font-size: 28px;
-    color: #0891b2;
+    color: #dc2626;
   }
 `
 
@@ -148,7 +148,7 @@ const TrainingDescription = styled.p`
 const TrainingButton = styled.a`
   display: inline-block;
   padding: 10px 25px;
-  background: #0891b2;
+  background: #dc2626;
   color: #fff;
   border-radius: 5px;
   font-weight: 500;
@@ -156,7 +156,7 @@ const TrainingButton = styled.a`
   transition: background 0.3s ease;
   
   &:hover {
-    background: #0e7490;
+    background: #b91c1c;
   }
 `
 
@@ -176,7 +176,7 @@ const SolutionItem = styled.li`
   margin-bottom: 30px;
   
   i {
-    color: #0891b2;
+    color: #dc2626;
     font-size: 24px;
     margin-right: 15px;
     margin-top: 5px;
@@ -198,7 +198,7 @@ const SolutionDescription = styled.p`
   line-height: 1.7;
 `
 
-const ConsultingServicesPage = () => {
+const SecurityServicesPage = () => {
   const servicesRef = useRef(null)
   const trainingsRef = useRef(null)
   const solutionsRef = useRef(null)
@@ -269,99 +269,97 @@ const ConsultingServicesPage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="IT Consulting" />
+      <PageHeader title="Cyber Security" />
 
       <ServiceContainer>
         <div className="container">
           <ServiceSection ref={servicesRef}>
-            <SectionTitle>Our IT Consulting Services</SectionTitle>
+            <SectionTitle>Our Cyber Security Services</SectionTitle>
             <p>
-              We provide strategic IT consulting services to help businesses align their technology with their business
-              objectives and drive digital transformation.
+              We provide comprehensive cyber security solutions to protect your business from evolving threats and
+              ensure the integrity of your digital assets.
             </p>
 
             <ServiceGrid>
               <ServiceCard className="service-card">
                 <ServiceIcon>
-                  <i className="ri-roadmap-line"></i>
+                  <i className="ri-shield-keyhole-line"></i>
                 </ServiceIcon>
-                <ServiceTitle>IT Strategy</ServiceTitle>
+                <ServiceTitle>Security Assessment</ServiceTitle>
                 <ServiceDescription>
-                  Develop a comprehensive IT strategy aligned with your business goals to drive growth and innovation.
+                  Comprehensive evaluation of your security posture to identify vulnerabilities and recommend
+                  improvements.
                 </ServiceDescription>
               </ServiceCard>
 
               <ServiceCard className="service-card">
                 <ServiceIcon>
-                  <i className="ri-git-merge-line"></i>
+                  <i className="ri-spy-line"></i>
                 </ServiceIcon>
-                <ServiceTitle>Digital Transformation</ServiceTitle>
+                <ServiceTitle>Penetration Testing</ServiceTitle>
                 <ServiceDescription>
-                  Guide your organization through digital transformation initiatives to improve efficiency and
-                  competitiveness.
+                  Simulated cyber attacks to identify and address security weaknesses before they can be exploited by
+                  malicious actors.
                 </ServiceDescription>
               </ServiceCard>
 
               <ServiceCard className="service-card">
                 <ServiceIcon>
-                  <i className="ri-building-4-line"></i>
+                  <i className="ri-lock-password-line"></i>
                 </ServiceIcon>
-                <ServiceTitle>IT Architecture</ServiceTitle>
+                <ServiceTitle>Identity & Access Management</ServiceTitle>
                 <ServiceDescription>
-                  Design scalable and resilient IT architectures that support your business requirements and future
-                  growth.
+                  Implement robust identity verification and access control systems to protect sensitive resources.
                 </ServiceDescription>
               </ServiceCard>
 
               <ServiceCard className="service-card">
                 <ServiceIcon>
-                  <i className="ri-team-line"></i>
+                  <i className="ri-eye-line"></i>
                 </ServiceIcon>
-                <ServiceTitle>IT Governance</ServiceTitle>
+                <ServiceTitle>Security Monitoring</ServiceTitle>
                 <ServiceDescription>
-                  Establish effective IT governance frameworks to ensure alignment between IT and business objectives.
+                  24/7 monitoring of your systems and networks to detect and respond to security incidents in real-time.
                 </ServiceDescription>
               </ServiceCard>
 
               <ServiceCard className="service-card">
                 <ServiceIcon>
-                  <i className="ri-line-chart-line"></i>
+                  <i className="ri-file-shield-2-line"></i>
                 </ServiceIcon>
-                <ServiceTitle>Technology Assessment</ServiceTitle>
+                <ServiceTitle>Data Protection</ServiceTitle>
                 <ServiceDescription>
-                  Evaluate your current technology stack and recommend improvements to enhance performance and reduce
-                  costs.
+                  Implement encryption, data loss prevention, and other measures to safeguard sensitive information.
                 </ServiceDescription>
               </ServiceCard>
 
               <ServiceCard className="service-card">
                 <ServiceIcon>
-                  <i className="ri-customer-service-2-line"></i>
+                  <i className="ri-computer-line"></i>
                 </ServiceIcon>
-                <ServiceTitle>IT Service Management</ServiceTitle>
+                <ServiceTitle>Endpoint Security</ServiceTitle>
                 <ServiceDescription>
-                  Optimize your IT service delivery with best practices and frameworks like ITIL to improve service
-                  quality.
+                  Protect devices accessing your network with advanced endpoint security solutions and policies.
                 </ServiceDescription>
               </ServiceCard>
             </ServiceGrid>
           </ServiceSection>
 
           <SolutionsSection ref={solutionsRef}>
-            <SectionTitle>Consulting Solutions We Provide</SectionTitle>
+            <SectionTitle>Security Solutions We Provide</SectionTitle>
             <p>
-              Our consulting solutions are designed to address the complex challenges faced by modern businesses,
-              enabling them to leverage technology for competitive advantage.
+              Our security solutions are designed to address the complex challenges of today's threat landscape,
+              providing comprehensive protection for your business.
             </p>
 
             <SolutionsList>
               <SolutionItem className="solution-item">
                 <i className="ri-check-double-line"></i>
                 <SolutionContent>
-                  <SolutionTitle>Technology Roadmapping</SolutionTitle>
+                  <SolutionTitle>Security Operations Center (SOC)</SolutionTitle>
                   <SolutionDescription>
-                    Create a detailed technology roadmap that outlines the steps needed to achieve your business
-                    objectives through strategic IT investments.
+                    Establish a dedicated security operations center to monitor, detect, analyze, and respond to
+                    security incidents.
                   </SolutionDescription>
                 </SolutionContent>
               </SolutionItem>
@@ -369,10 +367,10 @@ const ConsultingServicesPage = () => {
               <SolutionItem className="solution-item">
                 <i className="ri-check-double-line"></i>
                 <SolutionContent>
-                  <SolutionTitle>IT Cost Optimization</SolutionTitle>
+                  <SolutionTitle>Incident Response Planning</SolutionTitle>
                   <SolutionDescription>
-                    Identify opportunities to reduce IT costs while maintaining or improving service levels and
-                    supporting business growth.
+                    Develop comprehensive incident response plans to minimize damage and recovery time in the event of a
+                    security breach.
                   </SolutionDescription>
                 </SolutionContent>
               </SolutionItem>
@@ -380,10 +378,10 @@ const ConsultingServicesPage = () => {
               <SolutionItem className="solution-item">
                 <i className="ri-check-double-line"></i>
                 <SolutionContent>
-                  <SolutionTitle>Vendor Selection & Management</SolutionTitle>
+                  <SolutionTitle>Cloud Security</SolutionTitle>
                   <SolutionDescription>
-                    Guide you through the process of selecting the right technology vendors and managing those
-                    relationships effectively.
+                    Implement security controls specifically designed for cloud environments to protect data and
+                    applications.
                   </SolutionDescription>
                 </SolutionContent>
               </SolutionItem>
@@ -391,10 +389,10 @@ const ConsultingServicesPage = () => {
               <SolutionItem className="solution-item">
                 <i className="ri-check-double-line"></i>
                 <SolutionContent>
-                  <SolutionTitle>Project Management Office (PMO)</SolutionTitle>
+                  <SolutionTitle>Compliance Management</SolutionTitle>
                   <SolutionDescription>
-                    Establish or enhance your PMO to ensure consistent delivery of IT projects on time, within budget,
-                    and meeting requirements.
+                    Ensure your security practices meet industry regulations and standards such as GDPR, HIPAA, PCI DSS,
+                    and more.
                   </SolutionDescription>
                 </SolutionContent>
               </SolutionItem>
@@ -402,10 +400,10 @@ const ConsultingServicesPage = () => {
               <SolutionItem className="solution-item">
                 <i className="ri-check-double-line"></i>
                 <SolutionContent>
-                  <SolutionTitle>Business Process Optimization</SolutionTitle>
+                  <SolutionTitle>Security Awareness Training</SolutionTitle>
                   <SolutionDescription>
-                    Analyze and redesign business processes to improve efficiency, reduce costs, and enhance customer
-                    experience through technology.
+                    Educate your employees about security best practices and how to recognize and respond to potential
+                    threats.
                   </SolutionDescription>
                 </SolutionContent>
               </SolutionItem>
@@ -415,19 +413,19 @@ const ConsultingServicesPage = () => {
 
         <TrainingSection ref={trainingsRef}>
           <div className="container">
-            <SectionTitle>IT Consulting Training Programs</SectionTitle>
+            <SectionTitle>Cyber Security Training Programs</SectionTitle>
             <p>
-              Enhance your team's consulting skills with our specialized training programs designed for IT professionals
-              at all levels.
+              Enhance your team's security skills with our specialized training programs designed for security
+              professionals at all levels.
             </p>
 
             <TrainingGrid>
               <TrainingCard className="training-card">
                 <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
                 <TrainingContent>
-                  <TrainingTitle>ITIL Certification</TrainingTitle>
+                  <TrainingTitle>Certified Ethical Hacker (CEH)</TrainingTitle>
                   <TrainingDescription>
-                    Comprehensive training in IT service management best practices using the ITIL framework.
+                    Learn the tools and techniques used by hackers to penetrate networks and how to defend against them.
                   </TrainingDescription>
                   <TrainingButton href="/tech-certifications">Learn More</TrainingButton>
                 </TrainingContent>
@@ -436,10 +434,9 @@ const ConsultingServicesPage = () => {
               <TrainingCard className="training-card">
                 <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
                 <TrainingContent>
-                  <TrainingTitle>Project Management Professional (PMP)</TrainingTitle>
+                  <TrainingTitle>CISSP Certification</TrainingTitle>
                   <TrainingDescription>
-                    Prepare for the PMP certification with training covering project management methodologies and best
-                    practices.
+                    Comprehensive training for the Certified Information Systems Security Professional certification.
                   </TrainingDescription>
                   <TrainingButton href="/tech-certifications">Learn More</TrainingButton>
                 </TrainingContent>
@@ -448,10 +445,9 @@ const ConsultingServicesPage = () => {
               <TrainingCard className="training-card">
                 <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
                 <TrainingContent>
-                  <TrainingTitle>TOGAF Certification</TrainingTitle>
+                  <TrainingTitle>Security+ Certification</TrainingTitle>
                   <TrainingDescription>
-                    Learn enterprise architecture principles and practices with The Open Group Architecture Framework
-                    (TOGAF).
+                    Foundational training covering the essential principles for network and operational security.
                   </TrainingDescription>
                   <TrainingButton href="/tech-certifications">Learn More</TrainingButton>
                 </TrainingContent>
@@ -460,9 +456,10 @@ const ConsultingServicesPage = () => {
               <TrainingCard className="training-card">
                 <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
                 <TrainingContent>
-                  <TrainingTitle>Agile & Scrum Training</TrainingTitle>
+                  <TrainingTitle>Cyber Security Awareness</TrainingTitle>
                   <TrainingDescription>
-                    Master agile methodologies and Scrum practices to improve project delivery and team collaboration.
+                    Training programs designed to educate all employees about security best practices and threat
+                    recognition.
                   </TrainingDescription>
                   <TrainingButton href="/tech-certifications">Learn More</TrainingButton>
                 </TrainingContent>
@@ -478,4 +475,4 @@ const ConsultingServicesPage = () => {
   )
 }
 
-export default ConsultingServicesPage
+export default SecurityServicesPage

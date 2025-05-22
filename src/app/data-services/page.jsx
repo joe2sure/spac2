@@ -423,7 +423,7 @@ const DataServicesPage = () => {
 
             <TrainingGrid>
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/placeholder.svg')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
                 <TrainingContent>
                   <TrainingTitle>Data Science Fundamentals</TrainingTitle>
                   <TrainingDescription>
@@ -435,7 +435,7 @@ const DataServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/placeholder.svg')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
                 <TrainingContent>
                   <TrainingTitle>Machine Learning Certification</TrainingTitle>
                   <TrainingDescription>
@@ -447,7 +447,7 @@ const DataServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/placeholder.svg')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
                 <TrainingContent>
                   <TrainingTitle>Big Data Technologies</TrainingTitle>
                   <TrainingDescription>
@@ -459,7 +459,7 @@ const DataServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/placeholder.svg')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
                 <TrainingContent>
                   <TrainingTitle>Data Visualization Tools</TrainingTitle>
                   <TrainingDescription>

@@ -422,7 +422,7 @@ const CloudServicesPage = () => {
 
             <TrainingGrid>
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/placeholder.svg')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
                 <TrainingContent>
                   <TrainingTitle>AWS Certification Training</TrainingTitle>
                   <TrainingDescription>
@@ -434,7 +434,7 @@ const CloudServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/placeholder.svg')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
                 <TrainingContent>
                   <TrainingTitle>Microsoft Azure Training</TrainingTitle>
                   <TrainingDescription>
@@ -446,7 +446,7 @@ const CloudServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/placeholder.svg')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
                 <TrainingContent>
                   <TrainingTitle>Google Cloud Platform Training</TrainingTitle>
                   <TrainingDescription>
@@ -458,7 +458,7 @@ const CloudServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/placeholder.svg')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
                 <TrainingContent>
                   <TrainingTitle>Cloud Security Training</TrainingTitle>
                   <TrainingDescription>
