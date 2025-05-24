@@ -1,3 +1,4 @@
+import CallToAction from '~/components/Section/AboutUs/CallToAction';
 import OurLeaders from '~/components/Section/AboutUs/OurLeaders';
 import ChooseSection from '~/components/Section/ChooseSection';
 import Footer from '~/components/Section/Footer/Footer';
@@ -27,6 +28,7 @@ export default function Home() {
       <LetsBuildSection />
       <TestimonialSection />
       <RecentBlogSection />
+      <CallToAction />
       <Footer />
     </div>
   );
