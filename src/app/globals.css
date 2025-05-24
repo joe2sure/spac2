@@ -586,11 +586,13 @@ header.tekup-header-section.light-color.sticky-menu {
   font-size: 22px;
   margin-left: 12px;
   transition: all 0.4s ease-in-out;
+  position: relative;
 }
 
 .tekup-default-btn:hover i,
 #tekup-default-btn:hover i {
   transform: translate(42px, -42px);
+  animation: arrowSlide 0.6s ease-in-out;
 }
 
 .tekup-default-btn::before,
@@ -796,6 +798,7 @@ header.tekup-header-section.light-color.sticky-menu {
 
 .ml-2 {
   margin-left: 0.5rem;
+  transition: all 0.4s ease-in-out;
 }
 
 /* Enhanced button styles */
@@ -825,82 +828,57 @@ header.tekup-header-section.light-color.sticky-menu {
   }
 }
 
-
-
-
-
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Arrow Animation Styles */
+.tekup-default-btn i,
+#tekup-default-btn i {
+  font-size: 22px;
+  margin-left: 12px;
+  transition: all 0.4s ease-in-out;
+  position: relative;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.tekup-default-btn:hover i,
+#tekup-default-btn:hover i {
+  animation: arrowSlide 0.6s ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes arrowSlide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Enhanced arrow animation for header buttons */
+.tekup-header-btn:hover i {
+  animation: arrowSlideHeader 0.5s ease-in-out;
 }
 
-/* Add these styles to your global CSS file or as a styled component */
-
-/* Adjust overlap amount for different screen sizes */
-@media (max-width: 992px) {
-  /* For tablets and smaller devices */
-  .cta-section-outer {
-    padding-bottom: 120px !important;
-    margin-bottom: -60px !important;
+@keyframes arrowSlideHeader {
+  0% {
+    transform: translateX(0);
   }
-  
-  .footer-section::before {
-    height: 60px !important;
+  40% {
+    transform: translateX(-8px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
-@media (max-width: 576px) {
-  /* For mobile devices */
-  .cta-section-outer {
-    padding-bottom: 100px !important;
-    margin-bottom: -40px !important;
-  }
-  
-  .footer-section::before {
-    height: 40px !important;
-  }
+/* Lucide React icon animation */
+.ml-2 {
+  margin-left: 0.5rem;
+  transition: all 0.4s ease-in-out;
 }
 
-/* Ensure proper stacking context */
-.cta-section-outer {
-  isolation: isolate;
-}
-
-/* Add some padding to the top of the footer content to account for the overlap */
-.tekup-infobox-wrap {
-  padding-top: 100px;
-}
-
-@media (max-width: 992px) {
-  .tekup-infobox-wrap {
-    padding-top: 80px;
-  }
-}
-
-@media (max-width: 576px) {
-  .tekup-infobox-wrap {
-    padding-top: 60px;
-  }
+.tekup-default-btn:hover .ml-2 {
+  animation: arrowSlide 0.6s ease-in-out;
 }
