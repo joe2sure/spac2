@@ -3,6 +3,837 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --heading-color: #0d0e1d;
+  --body-color: #0d0e1d;
+  --accent-color: #0119ff;
+  --white-color: #ffffff;
+  --dark-bg: #0d0e1d;
+  --white-bg: #ffffff;
+  --accent-bg: #0119ff;
+  --light-bg1: #f5f5f5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100% !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  overflow-x: hidden;
+  counter-reset: my-sec-counter;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+/* Add these styles to your global CSS file or as a styled component */
+
+/* Adjust overlap amount for different screen sizes */
+@media (max-width: 992px) {
+  /* For tablets and smaller devices */
+  .cta-section-outer {
+    padding-bottom: 120px !important;
+    margin-bottom: -60px !important;
+  }
+
+  .footer-section::before {
+    height: 60px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* For mobile devices */
+  .cta-section-outer {
+    padding-bottom: 100px !important;
+    margin-bottom: -40px !important;
+  }
+
+  .footer-section::before {
+    height: 40px !important;
+  }
+}
+
+/* Ensure proper stacking context */
+.cta-section-outer {
+  isolation: isolate;
+}
+
+/* Add some padding to the top of the footer content to account for the overlap */
+.tekup-infobox-wrap {
+  padding-top: 100px;
+}
+
+@media (max-width: 992px) {
+  .tekup-infobox-wrap {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tekup-infobox-wrap {
+    padding-top: 60px;
+  }
+}
+
+/* Enhanced Header and Hero Styles */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Afacad", sans-serif;
+  color: var(--heading-color);
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+h1,
+.h1 {
+  font-size: 100px;
+  line-height: 1em;
+  margin-bottom: 24px;
+  color: var(--white-color);
+}
+@media (max-width: 1400px) {
+  h1,
+  .h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 767px) {
+  h1,
+  .h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 56px;
+  line-height: 1.14em;
+}
+@media (max-width: 991px) {
+  h2,
+  .h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  h2,
+  .h2 {
+    font-size: 40px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 30px;
+  line-height: 1.26em;
+}
+
+h4,
+.h4 {
+  font-size: 30px;
+  line-height: 1.26em;
+}
+
+h5,
+.h5 {
+  font-size: 26px;
+  line-height: 1.3em;
+}
+
+h6,
+.h6 {
+  font-size: 22px;
+}
+
+p {
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  p {
+    margin-bottom: 20px;
+  }
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.24s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+button {
+  padding: 0px;
+  outline: none;
+  border: none;
+  display: inline-block;
+  background-color: transparent;
+}
+
+.dark-bg {
+  background-color: var(--dark-bg);
+}
+
+.bg-light1 {
+  background-color: var(--light-bg1);
+}
+
+.bg-accent {
+  background-color: var(--accent-bg);
+}
+
+.bg-white {
+  background-color: var(--white-bg);
+}
+
+/*1.1 layout css*/
+header.tekup-header-section {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  transition: all 0.4s;
+}
+
+header.tekup-header-section.sticky-menu {
+  box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
+}
+
+header.tekup-header-section.light-color.sticky-menu {
+  background-color: var(--dark-bg);
+}
+
+.sticky-menu .tekup-header-top {
+  margin-top: -57px;
+  opacity: 0;
+}
+
+.container-fuild {
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+@media (max-width: 1300px) {
+  .container-fuild {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .container-fuild {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+}
+
+.tekup-header-top {
+  padding: 12px 0;
+  transition: all 0.4s;
+}
+@media (max-width: 991px) {
+  .tekup-header-top {
+    display: none;
+  }
+}
+.tekup-header-top.border_bottom2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tekup-header-info-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tekup-header-info ul li {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 48px;
+  font-size: 18px;
+  color: var(--white-color);
+}
+.tekup-header-info ul li:last-child {
+  margin-right: 0;
+}
+.tekup-header-info ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: var(--white-color);
+}
+.tekup-header-info ul li i {
+  position: absolute;
+  font-size: 22px;
+  left: 0;
+}
+
+.tekup-header-bottom {
+  padding: 20px 0;
+}
+@media (max-width: 991px) {
+  .tekup-header-bottom {
+    padding: 20px 0;
+  }
+}
+
+.tekup-header-icon {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 20px;
+}
+@media (max-width: 991px) {
+  .tekup-header-icon {
+    margin-left: 0;
+  }
+}
+
+.site-header--menu-right .tekup-header-icon {
+  margin-left: 50px;
+}
+@media (max-width: 991px) {
+  .site-header--menu-right .tekup-header-icon {
+    margin-left: 0;
+  }
+}
+
+.site-header .mobile-menu-trigger.light span {
+  background-color: var(--white-color);
+}
+.site-header .mobile-menu-trigger.light span:before,
+.site-header .mobile-menu-trigger.light span:after {
+  background-color: var(--white-color);
+}
+
+.mobile-menu-trigger {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu-trigger span {
+  height: 2px;
+  width: 30px;
+  margin: 4px 0;
+  display: block;
+  position: relative;
+  background-color: var(--white-color);
+  transition: all 0.4s;
+}
+
+.mobile-menu-trigger span:before {
+  content: "";
+  top: -8px;
+  width: 30px;
+  height: 2px;
+  transition: all 0.4s;
+  position: absolute;
+  background-color: var(--white-color);
+}
+
+.mobile-menu-trigger span::after {
+  content: "";
+  bottom: -8px;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  transition: all 0.4s;
+  background-color: var(--white-color);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu-block-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.menu-block {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .menu-block {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: var(--white-bg);
+    transition: all 0.4s;
+    z-index: 999;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .menu-block.active {
+    right: 0;
+  }
+}
+
+.site-menu-main {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 991px) {
+  .site-menu-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+  }
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link-item {
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+
+.nav-link-item:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 991px) {
+  .nav-link-item {
+    color: var(--heading-color);
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--white-bg);
+  min-width: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+  z-index: 999;
+}
+
+.nav-item:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu--item {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sub-menu--item:last-child {
+  border-bottom: none;
+}
+
+.sub-menu--item a {
+  display: block;
+  padding: 12px 20px;
+  color: var(--heading-color);
+  transition: all 0.4s;
+}
+
+.sub-menu--item a:hover {
+  background: var(--accent-bg);
+  color: var(--white-color);
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+  z-index: 998;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-head {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .mobile-menu-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 20px;
+  }
+
+  .mobile-menu-close {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+/*1.2 components css*/
+.tekup-default-btn,
+#tekup-default-btn {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 18px 38px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-family: "Afacad", sans-serif;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  color: var(--white-color) !important;
+  background-color: var(--accent-bg);
+}
+
+.tekup-default-btn i,
+#tekup-default-btn i {
+  font-size: 22px;
+  margin-left: 12px;
+  transition: all 0.4s ease-in-out;
+}
+
+.tekup-default-btn:hover i,
+#tekup-default-btn:hover i {
+  transform: translate(42px, -42px);
+}
+
+.tekup-default-btn::before,
+#tekup-default-btn::before {
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "\ea70";
+  right: 0;
+  top: 0;
+  opacity: 1;
+  height: 100%;
+  font-size: 22px;
+  font-family: remixicon !important;
+  transform: translate(-65px, 65px);
+  transition: all 0.2s linear 0s;
+}
+
+.tekup-default-btn:hover::before,
+#tekup-default-btn:hover::before {
+  transform: translate(-40px, 18px);
+}
+
+.tekup-default-btn.tekup-header-btn,
+#tekup-default-btn.tekup-header-btn {
+  padding: 14px 35px;
+}
+
+.tekup-default-btn.tekup-header-btn:hover::before,
+#tekup-default-btn.tekup-header-btn:hover::before {
+  transform: translate(-35px, 15px);
+}
+
+.tekup-hero-section8 {
+  padding: 270px 0 130px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .tekup-hero-section8 {
+    padding: 200px 0 100px;
+  }
+}
+@media (max-width: 767px) {
+  .tekup-hero-section8 {
+    padding: 150px 0 80px;
+  }
+}
+
+.tekup-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.tekup-hero-content.white-color p {
+  color: var(--white-color);
+}
+
+.tekup-hero-content.center {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 1399px) {
+  .tekup-hero-content.center {
+    max-width: 800px;
+  }
+}
+
+.tekup-hero-content.center p {
+  max-width: 875px;
+  margin: 0 auto;
+}
+
+.tekup-hero-content.large-content h1 {
+  font-size: 112px;
+  line-height: 1em;
+  margin-bottom: 24px;
+  color: var(--white-color);
+}
+@media (max-width: 1400px) {
+  .tekup-hero-content.large-content h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .tekup-hero-content.large-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+}
+
+.tekup-hero-thumb-wrap {
+  padding: 130px 0;
+  display: grid;
+  gap: 24px;
+  align-items: center;
+  grid-template-columns: 340px 1fr 340px;
+}
+@media (max-width: 1399px) {
+  .tekup-hero-thumb-wrap {
+    grid-template-columns: 300px 1fr 300px;
+  }
+}
+@media (max-width: 1199px) {
+  .tekup-hero-thumb-wrap {
+    grid-template-columns: 250px 1fr 250px;
+  }
+}
+@media (max-width: 991px) {
+  .tekup-hero-thumb-wrap {
+    padding: 100px 0;
+    grid-template-columns: 180px 1fr 180px;
+  }
+}
+@media (max-width: 767px) {
+  .tekup-hero-thumb-wrap {
+    padding: 80px 0;
+    grid-template-columns: auto;
+  }
+}
+
+.tekup-hero-thumb-item img {
+  width: 100%;
+}
+
+.tekup-hero-thumb-column {
+  display: grid;
+  gap: 24px;
+}
+
+.tekup-hero-btn-wrap {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+@media (max-width: 991px) {
+  .tekup-hero-btn-wrap {
+    justify-content: center;
+  }
+}
+.tekup-hero-btn-wrap.center {
+  justify-content: center;
+}
+
+.tekup-extra-mt {
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .tekup-extra-mt {
+    margin-top: 30px;
+  }
+}
+
+.tekup-counter {
+  text-align: center;
+}
+
+.tekup-counter-wrap {
+  gap: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1199px) {
+  .tekup-counter-wrap {
+    gap: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .tekup-counter-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .tekup-counter-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tekup-counter-data {
+  text-align: center;
+}
+
+.tekup-counter-data h2 {
+  font-size: 80px;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+.tekup-counter-data h4,
+.tekup-counter-data h5 {
+  margin-bottom: 10px;
+}
+
+.tekup-counter-data p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.tekup-counter-data.light-color h2,
+.tekup-counter-data.light-color h4,
+.tekup-counter-data.light-color p {
+  color: var(--white-color);
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+/* Enhanced button styles */
+.tekup-default-btn,
+.tekup-header-btn {
+  border-radius: 25px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .tekup-counter {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+
+
+
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 @theme inline {
