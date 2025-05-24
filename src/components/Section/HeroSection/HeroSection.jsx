@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import CountUp from "react-countup"
-import { ArrowUpRightIcon as ArrowRightUp } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
-import styled from "styled-components"
+import { useEffect, useState } from "react";
+import CountUp from "react-countup";
+import { ArrowUpRightIcon as ArrowRightUp } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import styled from "styled-components";
 
 // Styled components for enhanced design
 const HeroContainer = styled.div`
   position: relative;
   overflow: hidden;
-`
+`;
 
 const AnimatedBackground = styled.div`
   position: absolute;
@@ -20,20 +20,26 @@ const AnimatedBackground = styled.div`
   height: 100%;
   overflow: hidden;
   z-index: 0;
-  
-  background: linear-gradient(135deg, 
-    rgba(1, 25, 255, 0.1) 0%, 
+
+  background: linear-gradient(
+    135deg,
+    rgba(1, 25, 255, 0.1) 0%,
     rgba(13, 14, 29, 0.8) 25%,
     rgba(1, 25, 255, 0.05) 50%,
     rgba(13, 14, 29, 0.9) 75%,
     rgba(1, 25, 255, 0.1) 100%
   );
-`
+`;
 
 const Shape = styled(motion.div)`
   position: absolute;
   background: ${(props) => props.gradient};
-  border-radius: ${(props) => (props.shape === "circle" ? "50%" : props.shape === "triangle" ? "0" : "10%")};
+  border-radius: ${(props) =>
+    props.shape === "circle"
+      ? "50%"
+      : props.shape === "triangle"
+      ? "0"
+      : "10%"};
   ${(props) =>
     props.shape === "triangle" &&
     `
@@ -44,33 +50,37 @@ const Shape = styled(motion.div)`
     border-right: ${props.size / 2}px solid transparent;
     border-bottom: ${props.size}px solid ${props.color};
   `}
-`
+`;
 
 const WaterButton = styled(motion.a)`
   position: relative;
   overflow: hidden;
   border-radius: 25px !important;
-  
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     width: 0;
     height: 0;
-    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.3) 0%,
+      transparent 70%
+    );
     border-radius: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     z-index: 0;
   }
-  
+
   &:hover::before {
     width: 300px;
     height: 300px;
     animation: waterRipple 0.6s ease-out;
   }
-  
+
   @keyframes waterRipple {
     0% {
       width: 0;
@@ -86,21 +96,21 @@ const WaterButton = styled(motion.a)`
       opacity: 0;
     }
   }
-  
+
   span {
     position: relative;
     z-index: 1;
   }
-`
+`;
 
 const VideoThumbnail = styled(motion.div)`
   position: relative;
   cursor: pointer;
   border-radius: 15px;
   overflow: hidden;
-  
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -110,17 +120,17 @@ const VideoThumbnail = styled(motion.div)`
     z-index: 1;
     transition: all 0.3s ease;
   }
-  
+
   &:hover::before {
     background: rgba(0, 0, 0, 0.1);
   }
-  
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-`
+`;
 
 const PlayButton = styled(motion.div)`
   position: absolute;
@@ -136,9 +146,9 @@ const PlayButton = styled(motion.div)`
   justify-content: center;
   z-index: 2;
   cursor: pointer;
-  
+
   &::before {
-    content: '';
+    content: "";
     width: 0;
     height: 0;
     border-left: 20px solid white;
@@ -146,71 +156,76 @@ const PlayButton = styled(motion.div)`
     border-bottom: 12px solid transparent;
     margin-left: 4px;
   }
-  
+
   &:hover {
     background: rgba(1, 25, 255, 1);
     transform: translate(-50%, -50%) scale(1.1);
   }
-`
+`;
 
 // Define the content for each slide
 const heroContent = [
   {
     heading: "The best innovative technology solutions",
-    paragraph: "We are architects of innovation, trailblazers of technological advancement",
+    paragraph:
+      "We are architects of innovation, trailblazers of technological advancement",
     images: [
-      "/images/v8/hero-thumb1.png",
-      "/images/v8/hero-thumb2.png",
-      "/images/v8/hero-thumb3.png",
-      "/images/v8/hero-thumb4.png",
-      "/images/v8/hero-thumb5.png",
+      "/images/v8/inno8_1.jpg",
+      "/images/v8/inno8_2.jpg",
+      "/images/v8/inno8_thumb.jpg",
+      "/images/v8/inno8_3.jpg",
+      "/images/v8/inno8_4.jpg",
     ],
   },
   {
     heading: "Cutting-edge digital transformation",
-    paragraph: "Empowering businesses with next-generation technology solutions",
+    paragraph:
+      "Empowering businesses with next-generation technology solutions",
     images: [
-      "/images/v8/hero-thumb5.png",
-      "/images/v8/hero-thumb4.png",
-      "/images/v8/hero-thumb3.png",
-      "/images/v8/hero-thumb2.png",
-      "/images/v8/hero-thumb1.png",
+      "/images/v8/edge_1.jpg",
+      "/images/v8/edge_2.jpg",
+      "/images/v8/edge_thumb.jpg",
+      "/images/v8/edge_3.jpg",
+      "/images/v8/edge_4.jpg",
     ],
   },
   {
     heading: "Seamless integration of AI solutions",
-    paragraph: "Harnessing the power of artificial intelligence to drive business growth",
+    paragraph:
+      "Harnessing the power of artificial intelligence to drive business growth",
     images: [
-      "/images/v8/hero-thumb2.png",
-      "/images/v8/hero-thumb1.png",
-      "/images/v8/hero-thumb5.png",
-      "/images/v8/hero-thumb3.png",
-      "/images/v8/hero-thumb4.png",
+      "/images/v8/ai_1.jpg",
+      "/images/v8/ai_4.jpg",
+      "/images/v8/ai_thumb.jpg",
+      "/images/v8/ai_3.jpg",
+      "/images/v8/ai_4.jpg",
     ],
   },
   {
     heading: "Future-proof your business strategy",
-    paragraph: "Creating sustainable technological ecosystems for long-term success",
+    paragraph:
+      "Creating sustainable technological ecosystems for long-term success",
     images: [
-      "/images/v8/hero-thumb3.png",
-      "/images/v8/hero-thumb5.png",
-      "/images/v8/hero-thumb1.png",
-      "/images/v8/hero-thumb4.png",
-      "/images/v8/hero-thumb2.png",
+      "/images/v8/fut_1.jpg",
+      "/images/v8/fut_2.jpg",
+      "/images/v8/fut_thumb.jpg",
+      "/images/v8/fut_3.jpg",
+      "/images/v8/fut_4.jpg",
     ],
   },
   {
     heading: "Revolutionize your digital presence",
-    paragraph: "Building immersive experiences that captivate and convert your audience",
+    paragraph:
+      "Building immersive experiences that captivate and convert your audience",
     images: [
-      "/images/v8/hero-thumb4.png",
-      "/images/v8/hero-thumb3.png",
-      "/images/v8/hero-thumb2.png",
-      "/images/v8/hero-thumb1.png",
-      "/images/v8/hero-thumb5.png",
+      "/images/v8/dit_1.jpg",
+      "/images/v8/dit_2.jpg",
+      "/images/v8/dit_thumb.jpg",
+      "/images/v8/dit_3.jpg",
+      "/images/v8/dit_4.jpg",
     ],
   },
-]
+];
 
 // Animation variants
 const textVariants = {
@@ -236,7 +251,7 @@ const textVariants = {
       ease: "easeIn",
     },
   }),
-}
+};
 
 const imageVariants = {
   initial: (custom) => ({
@@ -267,7 +282,7 @@ const imageVariants = {
       ease: "easeIn",
     },
   }),
-}
+};
 
 const buttonVariants = {
   initial: { opacity: 0, scale: 0.9 },
@@ -301,15 +316,15 @@ const buttonVariants = {
   tap: {
     scale: 0.95,
   },
-}
+};
 
 // Animated shapes component
 const AnimatedShapes = () => {
-  const [shapes, setShapes] = useState([])
+  const [shapes, setShapes] = useState([]);
 
   useEffect(() => {
     const createShape = () => {
-      const shapeTypes = ["circle", "square", "triangle"]
+      const shapeTypes = ["circle", "square", "triangle"];
       const colors = [
         "rgba(1, 25, 255, 0.4)",
         "rgba(255, 255, 255, 0.2)",
@@ -317,7 +332,7 @@ const AnimatedShapes = () => {
         "rgba(255, 255, 255, 0.15)",
         "rgba(1, 25, 255, 0.25)",
         "rgba(255, 255, 255, 0.3)",
-      ]
+      ];
 
       const gradients = [
         "linear-gradient(135deg, rgba(1, 25, 255, 0.4), rgba(255, 255, 255, 0.2))",
@@ -325,7 +340,7 @@ const AnimatedShapes = () => {
         "radial-gradient(circle, rgba(1, 25, 255, 0.3), transparent)",
         "linear-gradient(90deg, rgba(255, 255, 255, 0.15), rgba(1, 25, 255, 0.25))",
         "linear-gradient(180deg, rgba(1, 25, 255, 0.35), rgba(255, 255, 255, 0.1))",
-      ]
+      ];
 
       return {
         id: Math.random(),
@@ -337,18 +352,18 @@ const AnimatedShapes = () => {
         gradient: gradients[Math.floor(Math.random() * gradients.length)],
         duration: Math.random() * 8 + 12, // Slightly faster
         delay: Math.random() * 1,
-      }
-    }
+      };
+    };
 
     const interval = setInterval(() => {
       setShapes((prev) => {
-        const newShapes = [...prev, createShape()]
-        return newShapes.slice(-30) // Keep more shapes visible
-      })
-    }, 400) // More frequent creation
+        const newShapes = [...prev, createShape()];
+        return newShapes.slice(-30); // Keep more shapes visible
+      });
+    }, 400); // More frequent creation
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
@@ -384,52 +399,52 @@ const AnimatedShapes = () => {
             top: shape.y,
           }}
           onAnimationComplete={() => {
-            setShapes((prev) => prev.filter((s) => s.id !== shape.id))
+            setShapes((prev) => prev.filter((s) => s.id !== shape.id));
           }}
         />
       ))}
     </>
-  )
-}
+  );
+};
 
 const HeroSection = () => {
-  const [isVisible, setIsVisible] = useState(false)
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [showVideo, setShowVideo] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [showVideo, setShowVideo] = useState(false);
 
   const handleVideoClick = () => {
-    setShowVideo(true)
-  }
+    setShowVideo(true);
+  };
 
   const closeVideo = () => {
-    setShowVideo(false)
-  }
+    setShowVideo(false);
+  };
 
   // Handle scroll for counter visibility
   useEffect(() => {
     const handleScroll = () => {
-      const section = document.getElementById("counter-home-eight")
+      const section = document.getElementById("counter-home-eight");
       if (section) {
-        const rect = section.getBoundingClientRect()
-        const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0
-        setIsVisible(isVisible)
+        const rect = section.getBoundingClientRect();
+        const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
+        setIsVisible(isVisible);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   // Handle slide transitions
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroContent.length)
-    }, 6000) // Change slide every 6 seconds to allow for animations
+      setCurrentSlide((prev) => (prev + 1) % heroContent.length);
+    }, 6000); // Change slide every 6 seconds to allow for animations
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <HeroContainer className="tekup-hero-section8 dark-bg">
@@ -504,7 +519,12 @@ const HeroSection = () => {
                 custom={0}
                 variants={imageVariants}
               >
-                <img src={heroContent[currentSlide].images[0] || "/placeholder.svg"} alt="Hero image 1" />
+                <img
+                  src={
+                    heroContent[currentSlide].images[0] || "/placeholder.svg"
+                  }
+                  alt="Hero image 1"
+                />
               </motion.div>
             </AnimatePresence>
 
@@ -518,7 +538,12 @@ const HeroSection = () => {
                 custom={1}
                 variants={imageVariants}
               >
-                <img src={heroContent[currentSlide].images[1] || "/placeholder.svg"} alt="Hero image 2" />
+                <img
+                  src={
+                    heroContent[currentSlide].images[1] || "/placeholder.svg"
+                  }
+                  alt="Hero image 2"
+                />
               </motion.div>
             </AnimatePresence>
           </div>
@@ -537,8 +562,16 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <img src={heroContent[currentSlide].images[2] || "/placeholder.svg"} alt="Video thumbnail" />
-                <PlayButton whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} />
+                <img
+                  src={
+                    heroContent[currentSlide].images[2] || "/placeholder.svg"
+                  }
+                  alt="Video thumbnail"
+                />
+                <PlayButton
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                />
               </VideoThumbnail>
             </AnimatePresence>
           </div>
@@ -554,7 +587,12 @@ const HeroSection = () => {
                 custom={3}
                 variants={imageVariants}
               >
-                <img src={heroContent[currentSlide].images[3] || "/placeholder.svg"} alt="Hero image 4" />
+                <img
+                  src={
+                    heroContent[currentSlide].images[3] || "/placeholder.svg"
+                  }
+                  alt="Hero image 4"
+                />
               </motion.div>
             </AnimatePresence>
 
@@ -568,19 +606,67 @@ const HeroSection = () => {
                 custom={4}
                 variants={imageVariants}
               >
-                <img src={heroContent[currentSlide].images[4] || "/placeholder.svg"} alt="Hero image 5" />
+                <img
+                  src={
+                    heroContent[currentSlide].images[4] || "/placeholder.svg"
+                  }
+                  alt="Hero image 5"
+                />
               </motion.div>
             </AnimatePresence>
           </div>
         </div>
-
         <div className="tekup-hero-counter-section" id="counter-home-eight">
           <div id="tekup-counter"></div>
           <div className="tekup-counter-wrap">
             <div className="tekup-counter-data light-color">
               <h2>
-                <span data-percentage="10" className="tekup-counter">
-                  {isVisible && <CountUp end={10} duration={3} />}
+                <span data-percentage="15" className="tekup-counter">
+                  {isVisible && <CountUp end={15} duration={3} />}
+                </span>
+                +
+              </h2>
+              <h4>Years of Experience</h4>
+              <p>
+                Over a decade and a half delivering innovative solutions and
+                industry expertise to our clients.
+              </p>
+            </div>
+            <div className="tekup-counter-data light-color">
+              <h2>
+                <span data-percentage="200" className="tekup-counter">
+                  {isVisible && <CountUp end={200} duration={3} />}
+                </span>
+                +
+              </h2>
+              <h4>Successfully Projects Done</h4>
+              <p>
+                200+ projects delivered with excellence across diverse
+                industries and technologies.
+              </p>
+            </div>
+            <div className="tekup-counter-data light-color">
+              <h2>
+                <span data-percentage="150" className="tekup-counter">
+                  {isVisible && <CountUp end={150} duration={3} />}
+                </span>
+                +
+              </h2>
+              <h4>Satisfied Happy Clients</h4>
+              <p>
+                A growing community of delighted clients who trust us for their
+                digital transformation needs.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* <div className="tekup-hero-counter-section" id="counter-home-eight">
+          <div id="tekup-counter"></div>
+          <div className="tekup-counter-wrap">
+            <div className="tekup-counter-data light-color">
+              <h2>
+                <span data-percentage="15" className="tekup-counter">
+                  {isVisible && <CountUp end={15} duration={3} />}
                 </span>
                 +
               </h2>
@@ -589,8 +675,8 @@ const HeroSection = () => {
             </div>
             <div className="tekup-counter-data light-color">
               <h2>
-                <span data-percentage="100" className="tekup-counter">
-                  {isVisible && <CountUp end={100} duration={3} />}
+                <span data-percentage="200" className="tekup-counter">
+                  {isVisible && <CountUp end={200} duration={3} />}
                 </span>
                 +
               </h2>
@@ -599,8 +685,8 @@ const HeroSection = () => {
             </div>
             <div className="tekup-counter-data light-color">
               <h2>
-                <span data-percentage="90" className="tekup-counter">
-                  {isVisible && <CountUp end={90} duration={3} />}
+                <span data-percentage="150" className="tekup-counter">
+                  {isVisible && <CountUp end={150} duration={3} />}
                 </span>
                 +
               </h2>
@@ -608,7 +694,7 @@ const HeroSection = () => {
               <p>To succeed, every software solution be deeply integrated into the</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* Video Modal */}
       {showVideo && (
@@ -673,16 +759,10 @@ const HeroSection = () => {
         </motion.div>
       )}
     </HeroContainer>
-  )
-}
+  );
+};
 
-export default HeroSection
-
-
-
-
-
-
+export default HeroSection;
 
 // "use client"
 
@@ -696,7 +776,7 @@ export default HeroSection
 // const HeroContainer = styled.div`
 //   position: relative;
 //   overflow: hidden;
-  
+
 //   &::after {
 //     content: '';
 //     position: absolute;
@@ -719,9 +799,9 @@ export default HeroSection
 //   height: 100%;
 //   overflow: hidden;
 //   z-index: 0;
-  
-//   background: linear-gradient(135deg, 
-//     rgba(1, 25, 255, 0.1) 0%, 
+
+//   background: linear-gradient(135deg,
+//     rgba(1, 25, 255, 0.1) 0%,
 //     rgba(13, 14, 29, 0.8) 25%,
 //     rgba(1, 25, 255, 0.05) 50%,
 //     rgba(13, 14, 29, 0.9) 75%,
@@ -749,7 +829,7 @@ export default HeroSection
 //   position: relative;
 //   overflow: hidden;
 //   border-radius: 25px !important;
-  
+
 //   &::before {
 //     content: '';
 //     position: absolute;
@@ -763,13 +843,13 @@ export default HeroSection
 //     transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 //     z-index: 0;
 //   }
-  
+
 //   &:hover::before {
 //     width: 300px;
 //     height: 300px;
 //     animation: waterRipple 0.6s ease-out;
 //   }
-  
+
 //   @keyframes waterRipple {
 //     0% {
 //       width: 0;
@@ -785,7 +865,7 @@ export default HeroSection
 //       opacity: 0;
 //     }
 //   }
-  
+
 //   span {
 //     position: relative;
 //     z-index: 1;
