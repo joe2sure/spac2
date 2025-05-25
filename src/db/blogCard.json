@@ -1,6 +1,6 @@
 [
     {
-        "image": "/images/blog/blog1.png",
+        "image": "/images/blog/ad_database_1.jpg",
         "title": "Securing Enterprise Data: Advanced Database Administration Techniques",
         "category": "Database Administration",
         "date": "15 May 2025",
@@ -8,7 +8,7 @@
         "excerpt": "Discover how our database administration team implemented high-availability solutions that reduced downtime by 99.9% for mission-critical systems."
     },
     {
-        "image": "/images/blog/blog12.png",
+        "image": "/images/blog/azure_sys_BP_1.jpg",
         "title": "Cloud Migration Success: Azure System Administration Best Practices",
         "category": "Azure",
         "date": "7 May 2025",
@@ -16,7 +16,7 @@
         "excerpt": "Learn the step-by-step approach our Azure specialists used to migrate a complex legacy infrastructure to the cloud while maintaining continuous operations."
     },
     {
-        "image": "/images/blog/blog3.png",
+        "image": "/images/blog/ML_1.jpg",
         "title": "How Machine Learning is Revolutionizing Predictive Maintenance",
         "category": "Machine Learning",
         "date": "29 April 2025",
@@ -24,7 +24,7 @@
         "excerpt": "Case study: How our ML engineers built a predictive maintenance system that reduced equipment failures by 78% for a manufacturing client."
     },
     {
-        "image": "/images/blog/blog4.png",
+        "image": "/images/blog/DA_TT_CR_1.jpg",
         "title": "Data Analysis Techniques That Transformed Customer Retention",
         "category": "Data Analysis",
         "date": "22 April 2025",
@@ -32,7 +32,7 @@
         "excerpt": "Explore the advanced analytics methods our data scientists implemented to help an e-commerce platform increase customer retention by 45%."
     },
     {
-        "image": "/images/blog/blog5.png",
+        "image": "/images/blog/PME_1.jpg",
         "title": "Project Management Excellence: Delivering Complex IT Solutions On Time",
         "category": "Project Management",
         "date": "18 April 2025",
@@ -40,7 +40,7 @@
         "excerpt": "Our project management methodology explained: How we consistently deliver enterprise-scale IT projects on time and within budget."
     },
     {
-        "image": "/images/blog/blog6.png",
+        "image": "/images/blog/ai_CS_2.jpg",
         "title": "AI-Powered Customer Service: Building Intelligent Chatbots",
         "category": "AI Solutions",
         "date": "10 April 2025",
@@ -48,7 +48,7 @@
         "excerpt": "Inside look at how we developed an AI customer service solution that handles 85% of inquiries without human intervention while maintaining satisfaction scores."
     },
     {
-        "image": "/images/blog/blog7.png",
+        "image": "/images/blog/CS_essential_1.jpg",
         "title": "Cybersecurity Essentials: Protecting Your Organization from Modern Threats",
         "category": "Cybersecurity",
         "date": "3 April 2025",
@@ -56,7 +56,7 @@
         "excerpt": "Our cybersecurity experts share the critical steps every organization should take to safeguard their digital assets from increasingly sophisticated attacks."
     },
     {
-        "image": "/images/blog/blog8.png",
+        "image": "/images/blog/DevOps_2.jpg",
         "title": "Implementing DevOps Practices for Faster Software Delivery",
         "category": "DevOps",
         "date": "28 March 2025",
@@ -64,7 +64,7 @@
         "excerpt": "How our DevOps transformation services helped a financial services client reduce deployment time from weeks to hours while improving code quality."
     },
     {
-        "image": "/images/blog/blog9.png",
+        "image": "/images/blog/deepL_2.jpg",
         "title": "Deep Learning Applications in Computer Vision for Quality Control",
         "category": "AI Research",
         "date": "21 March 2025",
