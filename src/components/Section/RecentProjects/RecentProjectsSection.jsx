@@ -14,7 +14,7 @@ const techProjects = [
     title: "Enterprise Database Migration",
     category: "Database Administration",
     // image: "/images/portfolio/db-admin.jpg",
-    image: "/images/p1/p_1.png",
+    image: "/images/p1/ED_migration_1.jpg",
     description: "Seamless migration of legacy systems to cloud-based database architecture with zero downtime"
   },
   {
@@ -22,7 +22,7 @@ const techProjects = [
     title: "Azure Cloud Infrastructure",
     category: "Azure System Administration",
     // image: "/images/portfolio/azure-admin.jpg",
-    image: "/images/p1/p_2.png",
+    image: "/images/p1/azure_1.jpg",
     description: "Complete enterprise infrastructure deployment using Azure's latest cloud technologies"
   },
   {
@@ -30,7 +30,7 @@ const techProjects = [
     title: "Predictive Analytics Engine",
     category: "Machine Learning Engineering",
     // image: "/images/portfolio/ml-engineering.jpg",
-    image: "/images/p1/p_3.png",
+    image: "/images/p1/pred_ana_engine_2.jpg",
     description: "Custom machine learning algorithm for predictive maintenance in manufacturing sector"
   },
   {
@@ -38,7 +38,7 @@ const techProjects = [
     title: "Financial Insights Dashboard",
     category: "Data Analysis",
     // image: "/images/portfolio/data-analysis.jpg",
-    image: "/images/p1/p_1.png",
+    image: "/images/p1/finance_dash_1.jpg",
     description: "Real-time data visualization platform for financial institutions with predictive capabilities"
   },
   {
@@ -46,7 +46,7 @@ const techProjects = [
     title: "Enterprise Digital Transformation",
     category: "Project Management",
     // image: "/images/portfolio/project-mgmt.jpg",
-    image: "/images/p1/p_5.png",
+    image: "/images/p1/ED_migration_2.jpg",
     description: "End-to-end digital transformation for Fortune 500 company across multiple departments"
   },
   {
@@ -54,7 +54,7 @@ const techProjects = [
     title: "AI-Powered Customer Service",
     category: "AI Integrated Solutions",
     // image: "/images/portfolio/ai-solutions.jpg",
-    image: "/images/p1/p_5.png",
+    image: "/images/p1/ai_powered_2.jpg",
     description: "Natural language processing system that reduced customer service response time by 87%"
   },
   {
@@ -62,7 +62,7 @@ const techProjects = [
     title: "Zero-Trust Security Framework",
     category: "Cybersecurity",
     // image: "/images/portfolio/cybersecurity.jpg",
-    image: "/images/p1/p_1.png",
+    image: "/images/p1/zero-trust_1.jpg",
     description: "Comprehensive security overhaul implementing zero-trust architecture for financial services client"
   }
 ];

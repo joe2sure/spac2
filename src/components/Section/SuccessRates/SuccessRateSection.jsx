@@ -113,7 +113,7 @@ const SuccessRatesSection = () => {
             <motion.div className="tekup-thumb mr-30 position-relative">
               {/* Main thumb image with animation */}
               <motion.img 
-                src="/images/v3/thumb2.png" 
+                src="/images/v3/bus_security.jpg" 
                 alt="Main Thumb"
                 variants={imageVariants}
               />
@@ -123,7 +123,7 @@ const SuccessRatesSection = () => {
                 className="tekup-thumb-card right"
                 variants={thumbCardVariants}
               >
-                <img src="/images/v3/project-done.png" alt="Project Done"/>
+                <img src="/images/v3/Satisfaction.png" alt="Project Done"/>
               </motion.div>
               
               {/* Additional floating thumb images that appear with animation */}
@@ -132,7 +132,7 @@ const SuccessRatesSection = () => {
                 style={{ position: "absolute", top: "-25px", left: "20px", zIndex: 3 }}
                 variants={floatingImageVariants}
               >
-                <img src="/images/v3/thumb2.png" alt="Floating Thumb 1" style={{ width: "90px", height: "auto", borderRadius: "8px" }}/>
+                <img src="/images/v3/software_dev_1.jpg" alt="Floating Thumb 1" style={{ width: "90px", height: "auto", borderRadius: "8px" }}/>
               </motion.div>
               
               <motion.div 
@@ -143,7 +143,7 @@ const SuccessRatesSection = () => {
                 animate={imageControls}
                 transition={{ delay: 1.0 }}
               >
-                <img src="/images/v3/thumb2.png" alt="Floating Thumb 2" style={{ width: "100px", height: "auto", borderRadius: "8px" }}/>
+                <img src="/images/v3/bus_security_3.jpg" alt="Floating Thumb 2" style={{ width: "100px", height: "auto", borderRadius: "8px" }}/>
               </motion.div>
             </motion.div>
           </div>
