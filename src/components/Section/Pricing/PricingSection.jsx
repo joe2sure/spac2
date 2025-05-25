@@ -72,7 +72,7 @@ const PricingSection = () => {
             id: 1,
             title: "Essential Tech",
             description: "Perfect for small businesses beginning their digital transformation journey.",
-            price: "$499",
+            price: "£499",
             features: [
                 "Basic database administration",
                 "Standard Azure cloud setup",
@@ -86,7 +86,7 @@ const PricingSection = () => {
             id: 2,
             title: "Advanced Solutions",
             description: "Comprehensive tech services for growing businesses with complex needs.",
-            price: "$999",
+            price: "£999",
             features: [
                 "Advanced database optimization",
                 "Complete Azure system administration",
@@ -100,7 +100,7 @@ const PricingSection = () => {
             id: 3,
             title: "Enterprise Suite",
             description: "Full-scale technological solutions for large organizations with enterprise requirements.",
-            price: "$2499",
+            price: "£2499",
             features: [
                 "Enterprise database architecture",
                 "Custom AI integrated solutions",
