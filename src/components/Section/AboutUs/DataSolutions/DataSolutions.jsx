@@ -55,10 +55,10 @@ export default function DataSolutions() {
           <div className="col-lg-6" ref={imageRef}>
             <div className="tekup-service-thumb">
               {/* <img src="/images/about/data-solutions.png" alt="Data analytics dashboard" className="img-fluid" /> */}
-              <img src="/images/blog/blog1.png" alt="Data analytics dashboard" className="img-fluid" />
+              <img src="/images/blog/male_guest_2.jpg" alt="Data analytics dashboard" className="img-fluid" />
               <div className="tekup-service-thumb-shape">
                 {/* <img src="/images/about/person-analytics.png" alt="Person with analytics" className="img-fluid" /> */}
-                <img src="/images/blog/recent-post1.png" alt="Person with analytics" className="img-fluid" />
+                <img src="/images/blog/male_guest_1.jpg" alt="Person with analytics" className="img-fluid" />
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function DataSolutions() {
                 </h2>
               </div>
               <p>
-                Powerful and easy to use UI coupled with our proprietary data processing engine makes Softec the best
+                Powerful and easy to use UI coupled with our proprietary data processing engine makes Spacinfotech the best
                 choice for your business.
               </p>
               <div className="tekup-service-list feature-list">
