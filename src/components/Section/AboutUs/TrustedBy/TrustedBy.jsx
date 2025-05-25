@@ -57,22 +57,22 @@ const BrandSection = () => {
                 <div className="slider-container">
                     <Slider {...settings}>
                         <div className="tekup-brand-slider-item">
-                            <img src="/images/brand/brand-1.jpg" alt="" />
+                            <img src="/images/brand/airbnb.jpg" alt="" />
                         </div>
                         <div className="tekup-brand-slider-item">
-                            <img src="/images/v3/b_2.png" alt="" />
+                            <img src="/images/brand/amazon.png" alt="" />
                         </div>
                         <div className="tekup-brand-slider-item">
-                            <img src="/images/v3/b_3.png" alt="" />
+                            <img src="/images/brand/google_1.png" alt="" />
                         </div>
                         <div className="tekup-brand-slider-item">
-                            <img src="/images/v3/b_4.png" alt="" />
+                            <img src="/images/brand/hp_1.png" alt="" />
                         </div>
                         <div className="tekup-brand-slider-item">
-                            <img src="/images/v3/b_5.png" alt="" />
+                            <img src="/images/brand/microsoft_1.png" alt="" />
                         </div>
                         <div className="tekup-brand-slider-item">
-                            <img src="/images/v3/b_3.png" alt="" />
+                            <img src="/images/brand/netflix.png" alt="" />
                         </div>
                     </Slider>
                 </div>
