@@ -199,6 +199,12 @@ const SolutionDescription = styled.p`
 `
 
 const DataServicesPage = () => {
+  const HeaderImages = [
+    "/images/service/data_img_hero_1.jpg",
+    "/images/service/data_img_hero_2.jpg", 
+    "/images/service/data_img_hero_3.jpg"
+  ];
+
   const servicesRef = useRef(null)
   const trainingsRef = useRef(null)
   const solutionsRef = useRef(null)
@@ -269,7 +275,7 @@ const DataServicesPage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="Data & Analytics" />
+      <PageHeader title="Data & Analytics" images={HeaderImages} />
 
       <ServiceContainer>
         <div className="container">
@@ -423,7 +429,7 @@ const DataServicesPage = () => {
 
             <TrainingGrid>
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/data_sci_fund_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>Data Science Fundamentals</TrainingTitle>
                   <TrainingDescription>
@@ -435,7 +441,7 @@ const DataServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/ml_cert_img_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>Machine Learning Certification</TrainingTitle>
                   <TrainingDescription>
@@ -447,7 +453,7 @@ const DataServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/big_data_tech_img_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>Big Data Technologies</TrainingTitle>
                   <TrainingDescription>
@@ -459,7 +465,7 @@ const DataServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/data_vis_img_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>Data Visualization Tools</TrainingTitle>
                   <TrainingDescription>

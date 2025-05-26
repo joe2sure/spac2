@@ -199,6 +199,12 @@ const SolutionDescription = styled.p`
 `
 
 const SecurityServicesPage = () => {
+  const HeaderImages = [
+    "/images/service/cyber_hero_img_1.jpg",
+    "/images/service/cyber_hero_img_2.jpg", 
+    "/images/service/cyber_hero_img_3.jpg"
+  ];
+
   const servicesRef = useRef(null)
   const trainingsRef = useRef(null)
   const solutionsRef = useRef(null)
@@ -269,7 +275,7 @@ const SecurityServicesPage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="Cyber Security" />
+      <PageHeader title="Cyber Security" images={HeaderImages}/>
 
       <ServiceContainer>
         <div className="container">
@@ -421,7 +427,7 @@ const SecurityServicesPage = () => {
 
             <TrainingGrid>
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/cert_eth_hack_img_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>Certified Ethical Hacker (CEH)</TrainingTitle>
                   <TrainingDescription>
@@ -432,7 +438,7 @@ const SecurityServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/cissp_cert_img_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>CISSP Certification</TrainingTitle>
                   <TrainingDescription>
@@ -443,7 +449,7 @@ const SecurityServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/security+_cert_img_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>Security+ Certification</TrainingTitle>
                   <TrainingDescription>
@@ -454,7 +460,7 @@ const SecurityServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/cyber_sec_awareness_img_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>Cyber Security Awareness</TrainingTitle>
                   <TrainingDescription>
