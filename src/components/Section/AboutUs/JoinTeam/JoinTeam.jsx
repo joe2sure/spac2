@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import Link from "next/link"
+// import Link from "next/link"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import styled from "styled-components"
@@ -237,8 +237,8 @@ export default function JoinTeam() {
   // Updated job data to match the design
   const jobs = [
     {
-      title: "Product Designer",
-      location: "Newark, NJ",
+      title: "Cloud Engineer",
+      location: "Wolvehampton, UK",
       type: "Full-time",
     },
     {
@@ -247,17 +247,17 @@ export default function JoinTeam() {
       type: "Full-time",
     },
     {
-      title: "Junior Frontend Developer",
-      location: "Brooklyn, NY",
+      title: "Database Administrator",
+      location: "Wolvehampton, UK",
       type: "Full-time",
     },
     {
-      title: "Finance Executive",
-      location: "Newark, NJ",
+      title: "Game Designer",
+      location: "Wolvehampton, UK",
       type: "Full-time",
     },
     {
-      title: "Junior Copywriter",
+      title: "AI/Machine Learning Engineer",
       location: "London, UK",
       type: "Full-time",
     },
