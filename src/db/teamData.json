@@ -1,7 +1,7 @@
 [
     {
-        "image": "/images/team/team1.png",
-        "name": "Marvin McKinney",
+        "image": "/images/team/author.jpg",
+        "name": "Dr O.U Emmanuel",
         "position": "CEO & Founder",
         "socialLinks": [
             "https://www.linkedin.com/",
@@ -10,9 +10,9 @@
         ]
     },
     {
-        "image": "/images/team/team2.png",
-        "name": "Sophia Rodriguez",
-        "position": "Creative Director",
+        "image": "/images/team/im_paul.png",
+        "name": "Imoukhedeme Paul",
+        "position": "Data Analyst",
         "socialLinks": [
             "https://www.linkedin.com/",
             "https://twitter.com/",
@@ -20,9 +20,9 @@
         ]
     },
     {
-        "image": "/images/team/team3.png",
-        "name": "Alexander Cameron",
-        "position": "Lead Developer",
+        "image": "/images/team/sharhabil_tasiu.png",
+        "name": "Sharhabil Tasiu Abdulrauf",
+        "position": "Data Analyst",
         "socialLinks": [
             "https://www.linkedin.com/",
             "https://twitter.com/",
@@ -30,9 +30,9 @@
         ]
     },
     {
-        "image": "/images/team/team4.png",
-        "name": "Brooklyn Simmons",
-        "position": "Product Designer",
+        "image": "/images/team/mohamed_isa.png",
+        "name": "Muhammad Buhari Isa",
+        "position": "Data Analyst with STATA",
         "socialLinks": [
             "https://www.linkedin.com/",
             "https://twitter.com/",
@@ -40,9 +40,9 @@
         ]
     },
     {
-        "image": "/images/team/team5.png",
-        "name": "Kelly Williams",
-        "position": "Digital Marketer",
+        "image": "/images/team/Abdul_bashir.png",
+        "name": "Abdulraheem Bashir",
+        "position": "Data Analyst with Power BI",
         "socialLinks": [
             "https://www.linkedin.com/",
             "https://twitter.com/",
@@ -50,9 +50,49 @@
         ]
     },
     {
-        "image": "/images/team/team6.png",
-        "name": "Kari Rasmussen",
-        "position": "Cyber Specialist",
+        "image": "/images/team/nwabunwene_Osa.png",
+        "name": "Nwabunwene Osa-Afiana",
+        "position": "Data Analyst with Tableau",
+        "socialLinks": [
+            "https://www.linkedin.com/",
+            "https://twitter.com/",
+            "https://www.instagram.com/"
+        ]
+    },
+    {
+        "image": "/images/team/olanrewaju_amusa.png",
+        "name": "Olanrewaju Amusa",
+        "position": "Quality Assurance Engineer",
+        "socialLinks": [
+            "https://www.linkedin.com/",
+            "https://twitter.com/",
+            "https://www.instagram.com/"
+        ]
+    },
+    {
+        "image": "/images/team/Nisan_dave.png",
+        "name": "Nisan Dave",
+        "position": "Cloud Database Engineer ",
+        "socialLinks": [
+            "https://www.linkedin.com/",
+            "https://twitter.com/",
+            "https://www.instagram.com/"
+        ]
+    },
+    {
+        "image": "/images/team/Mercy_Tijani.png",
+        "name": "Mercy Tijani",
+        "position": "Business Automation Analyst",
+        "socialLinks": [
+            "https://www.linkedin.com/",
+            "https://twitter.com/",
+            "https://www.instagram.com/"
+        ]
+    },
+    {
+        "image": "/images/team/Oluwafemi_Adunmo.png",
+        "name": "Oluwafemi Adunmo",
+        "position": "Design Product Manager",
         "socialLinks": [
             "https://www.linkedin.com/",
             "https://twitter.com/",
