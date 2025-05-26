@@ -1,36 +1,36 @@
 [
     {
-        "image": "/images/p2/p_1.png",
-        "title": "Design of the year",
-        "category": "UI/UX Design",
+        "image": "/images/team/banner_img2.jpg",
+        "title": "Project of the year",
+        "category": "Tect2Start Conference",
         "link": "single-portfolio"
     },
     {
-        "image": "/images/p2/p_2.png",
+        "image": "/images/team/banner_img3.jpg",
         "title": "Ways to level up your brand",
         "category": "Branding",
         "link": "single-portfolio"
     },
     {
-        "image": "/images/p2/p_3.png",
+        "image": "/images/p2/cyber_analysis.jpg",
         "title": "Cyber Security Analysis",
         "category": "Technology",
         "link": "single-portfolio"
     },
     {
-        "image": "/images/p2/p_4.png",
-        "title": "Design Discussion",
-        "category": "Design",
+        "image": "/images/team/AboutUs_img2.jpg",
+        "title": "NextGen Discussion",
+        "category": "Technology",
         "link": "single-portfolio"
     },
     {
-        "image": "/images/p2/p_6.png",
+        "image": "/images/p2/lady_tech_1.jpg",
         "title": "Product Security Analysis",
         "category": "Product",
         "link": "single-portfolio"
     },
     {
-        "image": "/images/p2/p_7.png",
+        "image": "/images/p2/lady_tech_cross.jpg",
         "title": "Cross Industry Expertise",
         "category": "Marketing",
         "link": "single-portfolio"
