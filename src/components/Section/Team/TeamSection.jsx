@@ -2,7 +2,6 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-// import Link from "next/link";
 import teams from '~/db/teamData.json'
 import TeamCard from "~/components/Ui/Cards/TeamCard";
 const TeamSection = () => {
