@@ -156,6 +156,12 @@ const BenefitDescription = styled.p`
 `
 
 const CorporateTrainingPage = () => {
+  const HeaderImages = [
+    "/images/training/coop_train_program_1.jpg",
+    "/images/training/coop_train_program_2.jpg", 
+    "/images/training/coop_train_program_3.jpg"
+  ];
+
   const titleRef = useRef(null)
   const descriptionRef = useRef(null)
   const programCardsRef = useRef([])
@@ -234,7 +240,7 @@ const CorporateTrainingPage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="Corporate Training Programs" />
+      <PageHeader title="Corporate Training Programs" images={HeaderImages} />
 
       <CorporateContainer className="container">
         <SectionTitle ref={titleRef}>Customized Training Solutions for Your Organization</SectionTitle>

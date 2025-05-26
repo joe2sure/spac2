@@ -199,6 +199,12 @@ const SolutionDescription = styled.p`
 `
 
 const ConsultingServicesPage = () => {
+  const HeaderImages = [
+    "/images/service/IT_consult_img_1.jpg",
+    "/images/service/IT_consult_img_2.jpg", 
+    "/images/service/IT_consult_img_3.jpg"
+  ];
+
   const servicesRef = useRef(null)
   const trainingsRef = useRef(null)
   const solutionsRef = useRef(null)
@@ -269,7 +275,7 @@ const ConsultingServicesPage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="IT Consulting" />
+      <PageHeader title="IT Consulting" images={HeaderImages} />
 
       <ServiceContainer>
         <div className="container">
@@ -423,7 +429,7 @@ const ConsultingServicesPage = () => {
 
             <TrainingGrid>
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/ITIL_cert_img_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>ITIL Certification</TrainingTitle>
                   <TrainingDescription>
@@ -434,7 +440,7 @@ const ConsultingServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/PMP_img_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>Project Management Professional (PMP)</TrainingTitle>
                   <TrainingDescription>
@@ -446,7 +452,7 @@ const ConsultingServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/TOGAF_cert_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>TOGAF Certification</TrainingTitle>
                   <TrainingDescription>
@@ -458,7 +464,7 @@ const ConsultingServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/agile_scrum_img_2.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>Agile & Scrum Training</TrainingTitle>
                   <TrainingDescription>

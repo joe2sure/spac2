@@ -292,6 +292,12 @@ const coursesData = [
 ]
 
 const TrainingSchedulePage = () => {
+  const HeaderImages = [
+    "/images/training/training_calender_img_1.jpg",
+    "/images/training/training_calender_img_2.jpg", 
+    "/images/training/training_calender_img_3.jpg"
+  ];
+
   const [activeFilter, setActiveFilter] = useState("all")
   const [filteredCourses, setFilteredCourses] = useState(coursesData)
 
@@ -387,7 +393,7 @@ const TrainingSchedulePage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="Training Calendar" />
+      <PageHeader title="Training Calendar" images={HeaderImages}  />
 
       <ScheduleContainer className="container">
         <SectionTitle ref={titleRef}>Upcoming Training Sessions</SectionTitle>

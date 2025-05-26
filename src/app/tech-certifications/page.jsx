@@ -154,6 +154,12 @@ const StepDescription = styled.p`
 `
 
 const TechCertificationsPage = () => {
+  const HeaderImages = [
+    "/images/training/tech_cert_img_1.jpg",
+    "/images/training/tech_cert_img_2.jpg", 
+    "/images/training/tech_cert_img_3.jpg"
+  ];
+
   const sectionRef = useRef(null)
   const titleRef = useRef(null)
   const descriptionRef = useRef(null)
@@ -233,7 +239,7 @@ const TechCertificationsPage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="Tech Certifications" />
+      <PageHeader title="Tech Certifications" images={HeaderImages} />
 
       <CertificationsContainer ref={sectionRef} className="container">
         <SectionTitle ref={titleRef}>Industry-Leading Technology Certifications</SectionTitle>

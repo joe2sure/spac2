@@ -192,7 +192,7 @@ const blogData = [
     title: "The Future of Cloud Computing: Trends to Watch in 2023",
     excerpt: "Explore the emerging trends in cloud computing that are set to transform businesses in the coming year.",
     category: "cloud",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/cloud_comp_img_1.jpg",
     author: "John Smith",
     authorAvatar: "/placeholder.svg?height=100&width=100",
     date: "May 15, 2023",
@@ -202,7 +202,7 @@ const blogData = [
     title: "Securing Your Business Against Ransomware Attacks",
     excerpt: "Learn effective strategies to protect your organization from the growing threat of ransomware attacks.",
     category: "security",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/cloud_comp_img_2.jpg",
     author: "Sarah Johnson",
     authorAvatar: "/placeholder.svg?height=100&width=100",
     date: "May 10, 2023",
@@ -213,7 +213,7 @@ const blogData = [
     excerpt:
       "Discover how to harness the power of big data to drive informed business decisions and gain competitive advantage.",
     category: "data",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/leverage_big_data_1.jpg",
     author: "Michael Chen",
     authorAvatar: "/placeholder.svg?height=100&width=100",
     date: "May 5, 2023",
@@ -223,7 +223,7 @@ const blogData = [
     title: "Multi-Cloud Strategies: Benefits and Challenges",
     excerpt: "An in-depth look at the advantages and potential pitfalls of implementing a multi-cloud approach.",
     category: "cloud",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/multi_cloud_img_2.jpg",
     author: "Emily Wilson",
     authorAvatar: "/placeholder.svg?height=100&width=100",
     date: "April 28, 2023",
@@ -234,7 +234,7 @@ const blogData = [
     excerpt:
       "Why traditional perimeter-based security is no longer sufficient and how to implement a zero trust model.",
     category: "security",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/cyber_training_img_2.jpg",
     author: "David Lee",
     authorAvatar: "/placeholder.svg?height=100&width=100",
     date: "April 22, 2023",
@@ -244,7 +244,7 @@ const blogData = [
     title: "Practical Applications of AI in Data Analytics",
     excerpt: "Real-world examples of how artificial intelligence is revolutionizing data analysis across industries.",
     category: "data",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/pract_app_ai_1.jpg",
     author: "Lisa Rodriguez",
     authorAvatar: "/placeholder.svg?height=100&width=100",
     date: "April 15, 2023",
@@ -254,7 +254,7 @@ const blogData = [
     title: "Serverless Architecture: When and Why to Use It",
     excerpt: "A comprehensive guide to understanding serverless computing and its ideal use cases.",
     category: "cloud",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/serverless_arch_img_1.jpg",
     author: "Robert Kim",
     authorAvatar: "/placeholder.svg?height=100&width=100",
     date: "April 10, 2023",
@@ -265,7 +265,7 @@ const blogData = [
     excerpt:
       "Why employee education is your best defense against cyber threats and how to implement effective training.",
     category: "security",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/cyber_training_img_1.jpg",
     author: "Jennifer Taylor",
     authorAvatar: "/placeholder.svg?height=100&width=100",
     date: "April 5, 2023",
@@ -276,7 +276,7 @@ const blogData = [
     excerpt:
       "How to transform complex data into clear, actionable visualizations that drive better business decisions.",
     category: "data",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/data_vis_tech_img_1.jpg",
     author: "Thomas Brown",
     authorAvatar: "/placeholder.svg?height=100&width=100",
     date: "March 30, 2023",
@@ -284,6 +284,12 @@ const blogData = [
 ]
 
 const BlogPage = () => {
+  const HeaderImages = [
+    "/images/blog/male_guest_1.jpg",
+    "/images/blog/male_guest_3.jpg", 
+    "/images/blog/PME_2.jpg"
+  ];
+
   const [activeFilter, setActiveFilter] = useState("all")
   const [filteredBlogs, setFilteredBlogs] = useState(blogData)
   const [currentPage, setCurrentPage] = useState(1)
@@ -396,7 +402,7 @@ const BlogPage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="Blog" />
+      <PageHeader title="Blog" images={HeaderImages} />
 
       <BlogContainer className="container">
         <SectionTitle ref={titleRef}>Latest Insights & Articles</SectionTitle>
