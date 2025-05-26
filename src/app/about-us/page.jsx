@@ -5,11 +5,11 @@ import AboutMission from "~/components/Section/AboutUs/AboutMission"
 import DataSolutions from "~/components/Section/AboutUs/DataSolutions" 
 import JoinTeam from "~/components/Section/AboutUs/JoinTeam" 
 import CallToAction from "~/components/Section/AboutUs/CallToAction" 
-// import EnhancedPageHeader from "~/components/Section/PageHeader/EnhancedPageHeader" 
 import MissionVision from "~/components/Section/AboutUs/MissionVision" 
 import TeamSection from "~/components/Section/Team" 
 import AboutRecentProjects from "~/components/Section/AboutUs/AboutRecentProject" 
 import PageHeader from "~/components/Section/PageHeader/PageHeader"
+// import EnhancedPageHeader from "~/components/Section/PageHeader/EnhancedPageHeader" 
 
 const AboutPage = () => { 
   // Define custom images for the about page header
