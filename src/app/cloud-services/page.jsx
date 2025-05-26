@@ -190,6 +190,7 @@ const SolutionContent = styled.div`
 const SolutionTitle = styled.h4`
   font-size: 20px;
   font-weight: 600;
+  font-siz
   margin-bottom: 10px;
 `
 
@@ -199,6 +200,12 @@ const SolutionDescription = styled.p`
 `
 
 const CloudServicesPage = () => {
+    const serviceHeaderImages = [
+    "/images/service/cloud_img_1.jpg",
+    "/images/service/cloud_img_2.jpg", 
+    "/images/service/cloud_img_3.jpg"
+  ];
+
   const servicesRef = useRef(null)
   const trainingsRef = useRef(null)
   const solutionsRef = useRef(null)
@@ -269,7 +276,7 @@ const CloudServicesPage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="Cloud Solutions" />
+      <PageHeader title="Cloud Solutions" images={serviceHeaderImages}/>
 
       <ServiceContainer>
         <div className="container">
@@ -422,7 +429,7 @@ const CloudServicesPage = () => {
 
             <TrainingGrid>
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/aws_cert_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>AWS Certification Training</TrainingTitle>
                   <TrainingDescription>
@@ -434,7 +441,7 @@ const CloudServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/microsoft_azure_img_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>Microsoft Azure Training</TrainingTitle>
                   <TrainingDescription>
@@ -446,7 +453,7 @@ const CloudServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/google_cloud_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>Google Cloud Platform Training</TrainingTitle>
                   <TrainingDescription>
@@ -458,7 +465,7 @@ const CloudServicesPage = () => {
               </TrainingCard>
 
               <TrainingCard className="training-card">
-                <TrainingImage style={{ backgroundImage: "url('/images/p1/p_1.png')" }} />
+                <TrainingImage style={{ backgroundImage: "url('/images/service/cloud_security_1.jpg')" }} />
                 <TrainingContent>
                   <TrainingTitle>Cloud Security Training</TrainingTitle>
                   <TrainingDescription>
