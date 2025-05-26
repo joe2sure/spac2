@@ -75,7 +75,8 @@ const HeroDescription = styled.p`
 const HeroImage = styled.div`
   position: relative;
   height: 500px;
-  background-image: url('/placeholder.svg?height=500&width=600');
+  // background-image: url('/placeholder.svg?height=500&width=600');
+  background-image: url('/images/team/author.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -142,7 +143,7 @@ const MissionSection = styled.div`
 const MissionImage = styled.div`
   position: relative;
   height: 400px;
-  background-image: url('/placeholder.svg?height=400&width=600');
+  background-image: url('/images/team/banner_img1.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -293,6 +294,12 @@ const TeamSocial = styled.div`
 `
 
 const CashwyreAboutPage = () => {
+  const cashwyreHeaderImages = [
+    "/images/cashwyre/cashwyre_hero_1.jpg",
+    "/images/cashwyre/cashwyre_hero_2.jpg", 
+    "/images/cashwyre/cashwyre_hero_3.jpg"
+  ];
+
   const heroContentRef = useRef(null)
   const heroImageRef = useRef(null)
   const statCardsRef = useRef([])
@@ -414,7 +421,7 @@ const CashwyreAboutPage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="About Cashwyre" />
+      <PageHeader title="About Cashwyre" images={cashwyreHeaderImages}/>
 
       <AboutContainer className="container">
         <HeroSection>
@@ -434,15 +441,15 @@ const CashwyreAboutPage = () => {
 
         <StatsSection>
           <StatCard ref={addToStatCardsRef}>
-            <StatNumber>150+</StatNumber>
+            <StatNumber>50+</StatNumber>
             <StatLabel>Countries Served</StatLabel>
           </StatCard>
           <StatCard ref={addToStatCardsRef}>
-            <StatNumber>2M+</StatNumber>
+            <StatNumber>50k+</StatNumber>
             <StatLabel>Active Users</StatLabel>
           </StatCard>
           <StatCard ref={addToStatCardsRef}>
-            <StatNumber>$5B+</StatNumber>
+            <StatNumber>£1M+</StatNumber>
             <StatLabel>Transactions Processed</StatLabel>
           </StatCard>
           <StatCard ref={addToStatCardsRef}>
@@ -551,9 +558,9 @@ const CashwyreAboutPage = () => {
 
           <TeamGrid>
             <TeamCard ref={addToTeamCardsRef}>
-              <TeamImage image="/placeholder.svg?height=250&width=250" />
+              <TeamImage image="/images/team/author.jpg"/>
               <TeamInfo>
-                <TeamName>Sarah Johnson</TeamName>
+                <TeamName>Dr O.U Emmanuel</TeamName>
                 <TeamRole>Chief Executive Officer</TeamRole>
                 <TeamSocial>
                   <a href="#" aria-label="LinkedIn">
@@ -567,9 +574,9 @@ const CashwyreAboutPage = () => {
             </TeamCard>
 
             <TeamCard ref={addToTeamCardsRef}>
-              <TeamImage image="/placeholder.svg?height=250&width=250" />
+              <TeamImage image="/images/team/sunday.png" />
               <TeamInfo>
-                <TeamName>Michael Chen</TeamName>
+                <TeamName>Sunday Awa</TeamName>
                 <TeamRole>Chief Technology Officer</TeamRole>
                 <TeamSocial>
                   <a href="#" aria-label="LinkedIn">
@@ -583,10 +590,10 @@ const CashwyreAboutPage = () => {
             </TeamCard>
 
             <TeamCard ref={addToTeamCardsRef}>
-              <TeamImage image="/placeholder.svg?height=250&width=250" />
+              <TeamImage image="/images/team/victor-nwankwe.png" />
               <TeamInfo>
-                <TeamName>David Rodriguez</TeamName>
-                <TeamRole>Chief Financial Officer</TeamRole>
+                <TeamName>Victor Nwankwue</TeamName>
+                <TeamRole>Lead Engineer</TeamRole>
                 <TeamSocial>
                   <a href="#" aria-label="LinkedIn">
                     <i className="ri-linkedin-fill"></i>
@@ -599,9 +606,9 @@ const CashwyreAboutPage = () => {
             </TeamCard>
 
             <TeamCard ref={addToTeamCardsRef}>
-              <TeamImage image="/placeholder.svg?height=250&width=250" />
+              <TeamImage image="/images/team/victorOlusanya.png" />
               <TeamInfo>
-                <TeamName>Emily Patel</TeamName>
+                <TeamName>Victor Olusanya</TeamName>
                 <TeamRole>Chief Product Officer</TeamRole>
                 <TeamSocial>
                   <a href="#" aria-label="LinkedIn">

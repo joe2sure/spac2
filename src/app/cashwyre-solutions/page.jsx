@@ -77,7 +77,7 @@ const HeroDescription = styled.p`
 const HeroImage = styled.div`
   position: relative;
   height: 500px;
-  background-image: url('/placeholder.svg?height=500&width=600');
+  background-image: url('/images/cashwyre/transfer_img_1.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -205,7 +205,7 @@ const SolutionContent = styled.div`
 const SolutionImage = styled.div`
   position: relative;
   height: 400px;
-  background-image: url('/placeholder.svg?height=400&width=600');
+  background-image: url('/images/cashwyre/cashwyre_hero_2.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -389,6 +389,12 @@ const AuthorRole = styled.div`
 `
 
 const CashwyreSolutionsPage = () => {
+  const aboutHeaderImages = [
+    "/images/about/abt_hero_1.jpg",
+    "/images/about/abt_hero_2.jpg", 
+    "/images/about/abt_hero_3.jpg"
+  ];
+
   const heroContentRef = useRef(null)
   const heroImageRef = useRef(null)
   const featureCardsRef = useRef([])
@@ -504,7 +510,7 @@ const CashwyreSolutionsPage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="Payment Solutions" />
+      <PageHeader title="Payment Solutions" images={aboutHeaderImages} />
 
       <SolutionsContainer className="container">
         <HeroSection>
@@ -565,7 +571,7 @@ const CashwyreSolutionsPage = () => {
               </FeatureIcon>
               <FeatureTitle>Global Coverage</FeatureTitle>
               <FeatureDescription>
-                Send money to over 150 countries in 50+ currencies with local payment options in each region.
+                Send money to over 50 countries in 50+ currencies with local payment options in each region.
               </FeatureDescription>
             </FeatureCard>
 

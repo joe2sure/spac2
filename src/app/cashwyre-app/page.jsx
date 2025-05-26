@@ -407,6 +407,13 @@ const FAQAnswer = styled.div`
 `
 
 const CashwyreAppPage = () => {
+  const aboutHeaderImages = [
+    "/images/about/abt_hero_1.jpg",
+    "/images/about/abt_hero_2.jpg", 
+    "/images/about/abt_hero_3.jpg"
+  ];
+
+
   const [activeTab, setActiveTab] = useState(0)
   const [openFAQ, setOpenFAQ] = useState(null)
 
@@ -538,7 +545,7 @@ const CashwyreAppPage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="Get the Cashwyre App" />
+      <PageHeader title="Get the Cashwyre App" images={aboutHeaderImages}/>
 
       <AppContainer className="container">
         <HeroSection>
