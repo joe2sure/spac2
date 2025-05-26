@@ -185,7 +185,7 @@ const caseStudiesData = [
     excerpt:
       "How we helped a leading financial services company migrate their legacy systems to a secure cloud infrastructure.",
     category: "cloud",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/cloud_comp_img_1.jpg",
     results: [
       "Reduced operational costs by 40%",
       "Improved system reliability by 99.9%",
@@ -198,7 +198,7 @@ const caseStudiesData = [
     excerpt:
       "Implementing a comprehensive security solution to protect sensitive patient data and ensure HIPAA compliance.",
     category: "security",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/CS_essential_1.jpg",
     results: [
       "Zero security breaches since implementation",
       "100% HIPAA compliance achieved",
@@ -211,7 +211,7 @@ const caseStudiesData = [
     excerpt:
       "Developing a custom analytics solution to drive data-informed decision making across 200+ retail locations.",
     category: "data",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/blog.png",
     results: [
       "Increased sales by 25% through targeted promotions",
       "Reduced inventory costs by 30%",
@@ -224,7 +224,7 @@ const caseStudiesData = [
     excerpt:
       "Designing and implementing a robust multi-cloud architecture to support global operations and enhance scalability.",
     category: "cloud",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/blog.png",
     results: [
       "Achieved 99.99% uptime for critical systems",
       "Reduced time-to-market for new products by 60%",
@@ -237,7 +237,7 @@ const caseStudiesData = [
     excerpt:
       "Rapid response and recovery after a sophisticated ransomware attack, with implementation of preventive measures.",
     category: "security",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/blog.png",
     results: [
       "Complete system recovery within 48 hours",
       "No data loss or ransom payment",
@@ -250,7 +250,7 @@ const caseStudiesData = [
     excerpt:
       "Leveraging AI and machine learning to optimize supply chain operations and forecast demand with high accuracy.",
     category: "data",
-    image: "/images/breadcrumb/breadcrumb.png",
+    image: "/images/blog/blog.png",
     results: [
       "Inventory reduction of 35% while maintaining service levels",
       "Shipping costs reduced by 28%",
