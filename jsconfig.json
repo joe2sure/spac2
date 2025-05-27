@@ -8,10 +8,7 @@
       "~/public/*": ["public/*"]
     }
   },
-  "include": ["src"],
-    "rules": {
-    "react/no-unescaped-entities": "off"
-  }
+  "include": ["src"]
 }
 
 
