@@ -385,6 +385,12 @@ const faqData = [
 ]
 
 const KnowledgeBasePage = () => {
+  const HeaderImages = [
+    "/images/training/coop_train_program_1.jpg",
+    "/images/training/coop_train_program_2.jpg", 
+    "/images/training/coop_train_program_3.jpg"
+  ];
+
   const [openFAQ, setOpenFAQ] = useState(null)
   const [searchQuery, setSearchQuery] = useState("")
 
@@ -512,7 +518,7 @@ const KnowledgeBasePage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="Knowledge Base" />
+      <PageHeader title="Knowledge Base" images={HeaderImages}  />
 
       <KnowledgeBaseContainer className="container">
         <SectionTitle ref={titleRef}>Find Answers to Your Questions</SectionTitle>

@@ -211,7 +211,7 @@ const caseStudiesData = [
     excerpt:
       "Developing a custom analytics solution to drive data-informed decision making across 200+ retail locations.",
     category: "data",
-    image: "/images/blog/blog.png",
+    image: "/images/service/data_sci_fund_1.jpg",
     results: [
       "Increased sales by 25% through targeted promotions",
       "Reduced inventory costs by 30%",
@@ -224,7 +224,7 @@ const caseStudiesData = [
     excerpt:
       "Designing and implementing a robust multi-cloud architecture to support global operations and enhance scalability.",
     category: "cloud",
-    image: "/images/blog/blog.png",
+    image: "/images/blog/multi_cloud_img_1.jpg",
     results: [
       "Achieved 99.99% uptime for critical systems",
       "Reduced time-to-market for new products by 60%",
@@ -237,7 +237,7 @@ const caseStudiesData = [
     excerpt:
       "Rapid response and recovery after a sophisticated ransomware attack, with implementation of preventive measures.",
     category: "security",
-    image: "/images/blog/blog.png",
+    image: "/images/blog/CS_essential_2.jpg",
     results: [
       "Complete system recovery within 48 hours",
       "No data loss or ransom payment",
@@ -250,7 +250,7 @@ const caseStudiesData = [
     excerpt:
       "Leveraging AI and machine learning to optimize supply chain operations and forecast demand with high accuracy.",
     category: "data",
-    image: "/images/blog/blog.png",
+    image: "/images/blog/ML_1.jpg",
     results: [
       "Inventory reduction of 35% while maintaining service levels",
       "Shipping costs reduced by 28%",
@@ -260,6 +260,12 @@ const caseStudiesData = [
 ]
 
 const CaseStudiesPage = () => {
+  const HeaderImages = [
+    "/images/training/coop_train_program_1.jpg",
+    "/images/training/coop_train_program_2.jpg", 
+    "/images/training/coop_train_program_3.jpg"
+  ];
+
   const [activeFilter, setActiveFilter] = useState("all")
   const [filteredCaseStudies, setFilteredCaseStudies] = useState(caseStudiesData)
 
@@ -345,7 +351,7 @@ const CaseStudiesPage = () => {
   return (
     <div>
       <Header />
-      <PageHeader title="Case Studies" />
+      <PageHeader title="Case Studies" images={HeaderImages} />
 
       <CaseStudiesContainer className="container">
         <SectionTitle ref={titleRef}>Client Success Stories</SectionTitle>
