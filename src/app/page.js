@@ -10,7 +10,7 @@ import RecentBlogSection from '~/components/Section/RecentBlog';
 import RecentProjectsSection from '~/components/Section/RecentProjects';
 import ServiceSection from "~/components/Section/ServiceSection";
 import SuccessRatesSection from '~/components/Section/SuccessRates/SuccessRateSection';
-import TeamSection from '~/components/Section/Team';
+// import TeamSection from '~/components/Section/Team';
 import TestimonialSection from '~/components/Section/Testimonial';
 
 
