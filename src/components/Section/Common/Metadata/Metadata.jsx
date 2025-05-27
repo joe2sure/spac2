@@ -1,10 +1,10 @@
 // metadata.js
 export const Metadata = {
-  title: "SpacinfoTech || Cooperation",
+  title: "SpacinfoTech || Next Gen Cooperation",
   description: "Next Gen Cooperation",
   icons: {
-    icon: ["/favicon.ico?v=4"],
-    apple: ["/favicon.ico?v=4"],
+    icon: ["/favicon-32x32.png", "/favicon-16x16.png", "/favicon.ico"],
+    apple: ["/apple-touch-icon.png"],
     shortcut: ["/favicon.ico"],
   },
   };

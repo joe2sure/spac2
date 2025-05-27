@@ -10,17 +10,25 @@ import ContactSection from "~/components/Section/Contact/ContactSection";
 import MapSection from "~/components/Section/Contact/MapSection";
 import PageHeader from "~/components/Section/PageHeader/PageHeader";
 import Footer from "~/components/Section/Footer/Footer";
+import CallToAction from "~/components/Section/AboutUs/CallToAction";
 
 const ContactPage = () => {
-    return (
-        <>
-        <Header className="tekup-header-top bg-light1 "/>
-           <PageHeader title="Contact us"/> 
-           <ContactSection/>
-           <MapSection/>
-           <Footer />
-        </>
-    );
+  const HeaderImages = [
+    "/images/about/abt_hero_1.jpg",
+    "/images/about/abt_hero_2.jpg", 
+    "/images/about/abt_hero_3.jpg"
+  ];
+
+  return (
+    <>
+      <Header className="tekup-header-top bg-light1 " />
+      <PageHeader title="Contact us" images={HeaderImages}/>
+      <ContactSection />
+      <MapSection />
+      <CallToAction />
+      <Footer />
+    </>
+  );
 };
 
-export default ContactPage ;
+export default ContactPage;
