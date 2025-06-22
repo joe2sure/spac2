@@ -156,7 +156,7 @@ const PricingSection = () => {
                                         animate={hoveredCard === plan.id ? { scale: 1.1 } : { scale: 1 }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <h2>{plan.price}<span>/month</span></h2>
+                                        <h2>{plan.price}<span>/year</span></h2>
                                     </motion.div>
                                     <div className="tekup-pricing-feature extra-mt">
                                         <ul>
