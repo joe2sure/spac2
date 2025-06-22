@@ -73,7 +73,7 @@ export default function MissionVision() {
               <span className="sub-title">WHO WE ARE</span>
               <h2 className="title">Our Mission & Vision</h2>
               <p>
-                At Softec, we're driven by a clear mission and vision that guide everything we do. Our values form the
+                At Spacinfo tech, we're driven by a clear mission and vision that guide everything we do. Our values form the
                 foundation of our company culture and shape how we serve our clients.
               </p>
             </div>
