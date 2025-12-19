@@ -179,7 +179,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link href="tel:123">
-                      <i className="ri-phone-fill"></i>07482187549
+                      <i className="ri-phone-fill"></i>+44 7471 179613
                     </Link>
                   </li>
                 </ul>
