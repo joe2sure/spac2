@@ -1,4 +1,4 @@
-// import CallToAction from '~/components/Section/AboutUs/CallToAction';
+import CallToAction from '~/components/Section/AboutUs/CallToAction';
 import OurLeaders from '~/components/Section/AboutUs/OurLeaders';
 import ChooseSection from '~/components/Section/ChooseSection';
 import Footer from '~/components/Section/Footer/Footer';
@@ -11,6 +11,8 @@ import RecentProjectsSection from '~/components/Section/RecentProjects';
 import ServiceSection from "~/components/Section/ServiceSection";
 import SuccessRatesSection from '~/components/Section/SuccessRates/SuccessRateSection';
 import TestimonialSection from '~/components/Section/Testimonial';
+import FloatingNotification from '~/components/Section/FloatingNotification/FloatingNotification';  // ADD THIS
+
 
 
 export default function Home() {
@@ -29,6 +31,7 @@ export default function Home() {
       <RecentBlogSection />
       <CallToAction />
       <Footer />
+      <FloatingNotification />
     </div>
   );
 }
