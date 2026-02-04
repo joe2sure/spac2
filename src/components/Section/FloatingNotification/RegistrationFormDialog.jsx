@@ -28,7 +28,7 @@ const RegistrationFormDialog = ({ isOpen, onClose }) => {
   ];
 
   // CONFIGURE YOUR EXPRESS SERVER URL HERE
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://spacinfotech-mail-server.onrender.com' ||'http://localhost:3001';
 
   const handleChange = (e) => {
     const { name, value } = e.target;
